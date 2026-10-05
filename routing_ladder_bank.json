@@ -1,0 +1,152 @@
+[
+  {
+    "sid": "loc_seoul",
+    "domain": "location",
+    "relation": "residence",
+    "entity": "Seoul",
+    "entity_type": "proper_noun",
+    "fact": "I live in Seoul.",
+    "questions": [
+      "Where do I live?",
+      "Which city do I live in?",
+      "Can you remind me where I reside?",
+      "What is my city of residence?",
+      "Where is my home?"
+    ]
+  },
+  {
+    "sid": "pet_dogs",
+    "domain": "pet",
+    "relation": "preference",
+    "entity": "dogs",
+    "entity_type": "common_noun",
+    "fact": "I like dogs.",
+    "questions": [
+      "What do I like?",
+      "What animals do I like?",
+      "Could you remind me what I like?",
+      "Which pet do I prefer?",
+      "What kind of animal do I like?"
+    ]
+  },
+  {
+    "sid": "food_pizza",
+    "domain": "food",
+    "relation": "preference",
+    "entity": "pizza",
+    "entity_type": "common_noun",
+    "fact": "My favorite food is pizza.",
+    "questions": [
+      "What is my favorite food?",
+      "What food do I like most?",
+      "What do I like to eat?",
+      "Which dish is my favorite?",
+      "What is my preferred meal?"
+    ]
+  },
+  {
+    "sid": "hobby_piano",
+    "domain": "instrument",
+    "relation": "habit",
+    "entity": "piano",
+    "entity_type": "common_noun",
+    "fact": "I play piano.",
+    "questions": [
+      "What instrument do I play?",
+      "Which instrument do I play?",
+      "What do I play?",
+      "Can you remind me what I play?",
+      "What is my instrument?"
+    ]
+  },
+  {
+    "sid": "job_teacher",
+    "domain": "occupation",
+    "relation": "identity",
+    "entity": "teacher",
+    "entity_type": "class",
+    "fact": "I am a teacher.",
+    "questions": [
+      "What is my job?",
+      "What do I do for a living?",
+      "What is my occupation?",
+      "Which profession am I in?",
+      "What is my profession?"
+    ]
+  },
+  {
+    "sid": "travel_ice",
+    "domain": "travel",
+    "relation": "desire",
+    "entity": "Iceland",
+    "entity_type": "proper_noun",
+    "fact": "I want to visit Iceland.",
+    "questions": [
+      "Where do I want to visit?",
+      "What country do I want to travel to?",
+      "Which place do I want to go to?",
+      "Where would I like to travel?",
+      "What is my travel destination?"
+    ]
+  },
+  {
+    "sid": "color_blue",
+    "domain": "color",
+    "relation": "preference",
+    "entity": "blue",
+    "entity_type": "common_noun",
+    "fact": "My favorite color is blue.",
+    "questions": [
+      "What is my favorite color?",
+      "Which color do I like best?",
+      "What color do I prefer?",
+      "Can you remind me of my favorite color?",
+      "What color is my favorite?"
+    ]
+  },
+  {
+    "sid": "book_atlas",
+    "domain": "book",
+    "relation": "preference",
+    "entity": "Atlas Shrugged",
+    "entity_type": "proper_noun",
+    "fact": "My favorite book is Atlas Shrugged.",
+    "questions": [
+      "What is my favorite book?",
+      "Which book do I like most?",
+      "What book do I prefer?",
+      "Can you remind me of my favorite book?",
+      "What is the title of my favorite book?"
+    ]
+  },
+  {
+    "sid": "loc_busan",
+    "domain": "location",
+    "relation": "residence",
+    "entity": "Busan",
+    "entity_type": "proper_noun",
+    "fact": "I live in Busan.",
+    "questions": [
+      "Where do I live?",
+      "Which city do I live in?",
+      "What is my city of residence?",
+      "Where is my home?",
+      "Can you remind me where I reside?"
+    ]
+  },
+  {
+    "sid": "pet_cats",
+    "domain": "pet",
+    "relation": "preference",
+    "entity": "cats",
+    "entity_type": "common_noun",
+    "fact": "I like cats.",
+    "questions": [
+      "What do I like?",
+      "What animals do I like?",
+      "Which pet do I prefer?",
+      "What kind of animal do I like?",
+      "Could you remind me what I like?"
+    ]
+  }
+]
