@@ -1,0 +1,190 @@
+{
+  "elapsed_seconds": 2362.605234753806,
+  "base_model_parameter_bytes": 32121044992,
+  "embedding_parameter_bytes": 90852864,
+  "measurements": {
+    "model_loading": {
+      "elapsed_seconds": 12.745654697995633,
+      "peak_allocated_bytes": 32121045504,
+      "peak_reserved_bytes": 32130465792,
+      "end_allocated_bytes": 32121045504,
+      "base_parameter_bytes": 32121044992
+    },
+    "additional_writes": {
+      "elapsed_seconds": 596.1115379887633,
+      "peak_allocated_bytes": 37305737728,
+      "peak_reserved_bytes": 37427871744,
+      "end_allocated_bytes": 32138084864,
+      "new_count": 24,
+      "new_payload_bytes": 16911471768
+    },
+    "activation_matrix": {
+      "elapsed_seconds": 27.233410899993032,
+      "peak_allocated_bytes": 33328551936,
+      "peak_reserved_bytes": 33382465536,
+      "end_allocated_bytes": 32138084864,
+      "questions": 64,
+      "deltas": 64,
+      "pairs": 4096
+    },
+    "our_delta_24": {
+      "elapsed_seconds": 16.37649923423305,
+      "peak_allocated_bytes": 32372965888,
+      "peak_reserved_bytes": 32436649984,
+      "end_allocated_bytes": 32138084864,
+      "persistent_payload_bytes": 16911471768,
+      "persistent_tier": "Disk dense deltas; one loaded at a time",
+      "additional_model_bytes": 0,
+      "cpu_base_backup_bytes": 704643072
+    },
+    "our_delta_32": {
+      "elapsed_seconds": 21.179601995740086,
+      "peak_allocated_bytes": 32372965888,
+      "peak_reserved_bytes": 32436649984,
+      "end_allocated_bytes": 32138084864,
+      "persistent_payload_bytes": 22548629024,
+      "persistent_tier": "Disk dense deltas; one loaded at a time",
+      "additional_model_bytes": 0,
+      "cpu_base_backup_bytes": 704643072
+    },
+    "our_delta_48": {
+      "elapsed_seconds": 30.741565687116235,
+      "peak_allocated_bytes": 32372965888,
+      "peak_reserved_bytes": 32436649984,
+      "end_allocated_bytes": 32138084864,
+      "persistent_payload_bytes": 33822943536,
+      "persistent_tier": "Disk dense deltas; one loaded at a time",
+      "additional_model_bytes": 0,
+      "cpu_base_backup_bytes": 704643072
+    },
+    "our_delta_64": {
+      "elapsed_seconds": 42.345142455771565,
+      "peak_allocated_bytes": 32372965888,
+      "peak_reserved_bytes": 32451330048,
+      "end_allocated_bytes": 32138084864,
+      "persistent_payload_bytes": 45097258048,
+      "persistent_tier": "Disk dense deltas; one loaded at a time",
+      "additional_model_bytes": 0,
+      "cpu_base_backup_bytes": 704643072
+    },
+    "rag_index_creation": {
+      "elapsed_seconds": 5.2119934358634055,
+      "peak_allocated_bytes": 32350385152,
+      "peak_reserved_bytes": 32447135744,
+      "end_allocated_bytes": 32228945920,
+      "embedding_parameter_bytes": 90852864
+    },
+    "rag_qa_24": {
+      "elapsed_seconds": 87.36314893513918,
+      "peak_allocated_bytes": 33622778880,
+      "peak_reserved_bytes": 33940307968,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 388484,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_context_only_24": {
+      "elapsed_seconds": 19.183092093095183,
+      "peak_allocated_bytes": 32452536320,
+      "peak_reserved_bytes": 32556187648,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 1394472,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_32": {
+      "elapsed_seconds": 118.58818583702669,
+      "peak_allocated_bytes": 33622778880,
+      "peak_reserved_bytes": 33940307968,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 526381,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_context_only_32": {
+      "elapsed_seconds": 26.67408430110663,
+      "peak_allocated_bytes": 32452536320,
+      "peak_reserved_bytes": 32556187648,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 1886295,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_48": {
+      "elapsed_seconds": 173.61720363935456,
+      "peak_allocated_bytes": 33622778880,
+      "peak_reserved_bytes": 33940307968,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 767344,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_context_only_48": {
+      "elapsed_seconds": 39.52783946786076,
+      "peak_allocated_bytes": 32475993088,
+      "peak_reserved_bytes": 32577159168,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 2771403,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_64": {
+      "elapsed_seconds": 232.57983746938407,
+      "peak_allocated_bytes": 33622778880,
+      "peak_reserved_bytes": 33940307968,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 1035745,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_context_only_64": {
+      "elapsed_seconds": 53.341028260067105,
+      "peak_allocated_bytes": 32475993088,
+      "peak_reserved_bytes": 32577159168,
+      "end_allocated_bytes": 32228945920,
+      "persistent_payload_bytes": 3732796,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "kv_build_24": {
+      "elapsed_seconds": 193.31780331535265,
+      "peak_allocated_bytes": 53905749504,
+      "peak_reserved_bytes": 58546192384,
+      "end_allocated_bytes": 51375260160,
+      "persistent_payload_bytes": 19237175296
+    },
+    "kv_full_qa_24": {
+      "elapsed_seconds": 127.30706082610413,
+      "peak_allocated_bytes": 53834202112,
+      "peak_reserved_bytes": 57535365120,
+      "end_allocated_bytes": 51390726656,
+      "persistent_payload_bytes": 19237175296,
+      "persistent_tier": "GPU reusable full-bank cache",
+      "additional_model_bytes": 0,
+      "setup_peak_allocated_bytes": 53905749504,
+      "setup_peak_reserved_bytes": 58546192384
+    },
+    "kv_build_32": {
+      "elapsed_seconds": 323.96220056014135,
+      "peak_allocated_bytes": 61733599232,
+      "peak_reserved_bytes": 67731718144,
+      "end_allocated_bytes": 58242908672,
+      "persistent_payload_bytes": 26104823808
+    },
+    "kv_full_qa_32": {
+      "elapsed_seconds": 168.57059786701575,
+      "peak_allocated_bytes": 61569940992,
+      "peak_reserved_bytes": 66762833920,
+      "end_allocated_bytes": 58257326592,
+      "persistent_payload_bytes": 26104823808,
+      "persistent_tier": "GPU reusable full-bank cache",
+      "additional_model_bytes": 0,
+      "setup_peak_allocated_bytes": 61733599232,
+      "setup_peak_reserved_bytes": 67731718144
+    }
+  },
+  "new_write_bytes": 16911471768,
+  "new_write_count": 24,
+  "unique_bank_payload_bytes": 45097258048,
+  "scope": "New-write setup reported separately; plots compare inference/prefill/index peaks, not AlphaEdit writing"
+}

@@ -1,0 +1,4362 @@
+{
+  "results": {
+    "rag_qa": {
+      "trials": [
+        {
+          "qid": "c19f7a0b",
+          "question": "What time do I usually get home from work on weeknights?",
+          "answer": "6:30 pm",
+          "final": {
+            "text": "6:30 pm",
+            "emitted_text": "6:30 pm",
+            "tokens": 5,
+            "token_ids": [
+              21,
+              25,
+              966,
+              9012,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 808976384,
+            "decode_seconds": 0.2595178340561688
+          },
+          "query_seconds": 3.364798772148788,
+          "selected_sid": null,
+          "reference_source_sid": "qa-61f8b11e140a0959",
+          "retrieved_sids": [
+            "qa-61f8b11e140a0959"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.9999998211860657
+          ],
+          "context_tokens": 3034,
+          "prefix_cache_bytes": 795344896
+        },
+        {
+          "qid": "c960da58",
+          "question": "How many playlists do I have on Spotify?",
+          "answer": "20",
+          "final": {
+            "text": "20",
+            "emitted_text": "20",
+            "tokens": 2,
+            "token_ids": [
+              508,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 954204160,
+            "decode_seconds": 0.13987524202093482
+          },
+          "query_seconds": 3.745923356153071,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5f7b615f26178791",
+          "retrieved_sids": [
+            "qa-5f7b615f26178791"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.9999998807907104
+          ],
+          "context_tokens": 3596,
+          "prefix_cache_bytes": 942669824
+        },
+        {
+          "qid": "3b6f954b",
+          "question": "Where did I attend for my study abroad program?",
+          "answer": "University of Melbourne in Australia",
+          "final": {
+            "text": "University of Melbourne in Australia.",
+            "emitted_text": "University of Melbourne in Australia.",
+            "tokens": 7,
+            "token_ids": [
+              31272,
+              315,
+              27535,
+              304,
+              8494,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 786432000,
+            "decode_seconds": 0.3356820708140731
+          },
+          "query_seconds": 3.2569764461368322,
+          "selected_sid": null,
+          "reference_source_sid": "qa-f9b851f19b8ef12b",
+          "retrieved_sids": [
+            "qa-f9b851f19b8ef12b"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 2950,
+          "prefix_cache_bytes": 773324800
+        },
+        {
+          "qid": "94f70d80",
+          "question": "How long did it take me to assemble the IKEA bookshelf?",
+          "answer": "4 hours",
+          "final": {
+            "text": "4 hours.",
+            "emitted_text": "4 hours.",
+            "tokens": 4,
+            "token_ids": [
+              19,
+              4207,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 835190784,
+            "decode_seconds": 0.21674309531226754
+          },
+          "query_seconds": 3.3226497978903353,
+          "selected_sid": null,
+          "reference_source_sid": "qa-404d8b00a0cc6356",
+          "retrieved_sids": [
+            "qa-404d8b00a0cc6356"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0000001192092896
+          ],
+          "context_tokens": 3135,
+          "prefix_cache_bytes": 821821440
+        },
+        {
+          "qid": "dccbc061",
+          "question": "What was my previous stance on spirituality?",
+          "answer": "A staunch atheist",
+          "final": {
+            "text": "A staunch atheist.",
+            "emitted_text": "A staunch atheist.",
+            "tokens": 5,
+            "token_ids": [
+              32,
+              82721,
+              67464,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 1224998912,
+            "decode_seconds": 0.301969681866467
+          },
+          "query_seconds": 5.051928695756942,
+          "selected_sid": null,
+          "reference_source_sid": "qa-91b2ce1d83206887",
+          "retrieved_sids": [
+            "qa-91b2ce1d83206887"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 4627,
+          "prefix_cache_bytes": 1212940288
+        },
+        {
+          "qid": "311778f1",
+          "question": "How many hours did I spend watching documentaries on Netflix last month?",
+          "answer": "10",
+          "final": {
+            "text": "10",
+            "emitted_text": "10",
+            "tokens": 2,
+            "token_ids": [
+              605,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 957874176,
+            "decode_seconds": 0.14112494001165032
+          },
+          "query_seconds": 3.7729863352142274,
+          "selected_sid": null,
+          "reference_source_sid": "qa-67ce7b3893aa26db",
+          "retrieved_sids": [
+            "qa-67ce7b3893aa26db"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3606,
+          "prefix_cache_bytes": 945291264
+        },
+        {
+          "qid": "b86304ba",
+          "question": "How much is the painting of a sunset worth in terms of the amount I paid for it?",
+          "answer": "The painting is worth triple what I paid for it.",
+          "final": {
+            "text": "The painting is worth triple what I paid for it.",
+            "emitted_text": "The painting is worth triple what I paid for it.",
+            "tokens": 12,
+            "token_ids": [
+              791,
+              19354,
+              374,
+              5922,
+              24657,
+              1148,
+              358,
+              7318,
+              369,
+              433,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 676069376,
+            "decode_seconds": 0.5104051609523594
+          },
+          "query_seconds": 3.0054405531845987,
+          "selected_sid": null,
+          "reference_source_sid": "qa-66f0a0646e0bbe88",
+          "retrieved_sids": [
+            "qa-66f0a0646e0bbe88"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.9999999403953552
+          ],
+          "context_tokens": 2515,
+          "prefix_cache_bytes": 659292160
+        },
+        {
+          "qid": "5d3d2817",
+          "question": "What was my previous occupation?",
+          "answer": "Marketing specialist at a small startup",
+          "final": {
+            "text": "Marketing specialist at a small startup.",
+            "emitted_text": "Marketing specialist at a small startup.",
+            "tokens": 8,
+            "token_ids": [
+              68662,
+              24687,
+              520,
+              264,
+              2678,
+              21210,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 930086912,
+            "decode_seconds": 0.4001668421551585
+          },
+          "query_seconds": 3.906632878817618,
+          "selected_sid": null,
+          "reference_source_sid": "qa-4fbc48ccc11248f5",
+          "retrieved_sids": [
+            "qa-4fbc48ccc11248f5"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.9999998807907104
+          ],
+          "context_tokens": 3501,
+          "prefix_cache_bytes": 917766144
+        },
+        {
+          "qid": "37d43f65",
+          "question": "How much RAM did I upgrade my laptop to?",
+          "answer": "16GB",
+          "final": {
+            "text": "16GB",
+            "emitted_text": "16GB",
+            "tokens": 3,
+            "token_ids": [
+              845,
+              5494,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 899416064,
+            "decode_seconds": 0.18014589417725801
+          },
+          "query_seconds": 3.5823337812907994,
+          "selected_sid": null,
+          "reference_source_sid": "qa-84865ef74bd0da32",
+          "retrieved_sids": [
+            "qa-84865ef74bd0da32"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3385,
+          "prefix_cache_bytes": 887357440
+        },
+        {
+          "qid": "d52b4f67",
+          "question": "Where did I attend my cousin's wedding?",
+          "answer": "The Grand Ballroom",
+          "final": {
+            "text": "The Grand Ballroom.",
+            "emitted_text": "The Grand Ballroom.",
+            "tokens": 6,
+            "token_ids": [
+              791,
+              10517,
+              13131,
+              3039,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 603717632,
+            "decode_seconds": 0.27014849288389087
+          },
+          "query_seconds": 2.507543799933046,
+          "selected_sid": null,
+          "reference_source_sid": "qa-cc3f1b35753ebc44",
+          "retrieved_sids": [
+            "qa-cc3f1b35753ebc44"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.9999999403953552
+          ],
+          "context_tokens": 2255,
+          "prefix_cache_bytes": 591134720
+        },
+        {
+          "qid": "51a45a95",
+          "question": "Where did I redeem a $5 coupon on coffee creamer?",
+          "answer": "Target",
+          "final": {
+            "text": "Target",
+            "emitted_text": "Target",
+            "tokens": 2,
+            "token_ids": [
+              6531,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 644349952,
+            "decode_seconds": 0.12683800514787436
+          },
+          "query_seconds": 2.512663871049881,
+          "selected_sid": null,
+          "reference_source_sid": "qa-1799915ffb3ad52b",
+          "retrieved_sids": [
+            "qa-1799915ffb3ad52b"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 2410,
+          "prefix_cache_bytes": 631767040
+        },
+        {
+          "qid": "a82c026e",
+          "question": "What game did I finally beat last weekend?",
+          "answer": "Dark Souls 3 DLC",
+          "final": {
+            "text": "Dark Souls 3 DLC.",
+            "emitted_text": "Dark Souls 3 DLC.",
+            "tokens": 7,
+            "token_ids": [
+              26915,
+              58770,
+              220,
+              18,
+              44019,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 691011584,
+            "decode_seconds": 0.31948653096333146
+          },
+          "query_seconds": 2.8837780272588134,
+          "selected_sid": null,
+          "reference_source_sid": "qa-fd14cb14ca42ac1a",
+          "retrieved_sids": [
+            "qa-fd14cb14ca42ac1a"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 2587,
+          "prefix_cache_bytes": 678166528
+        },
+        {
+          "qid": "6b168ec8",
+          "question": "How many bikes do I own?",
+          "answer": "three",
+          "final": {
+            "text": "three",
+            "emitted_text": "three",
+            "tokens": 2,
+            "token_ids": [
+              28956,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 955514880,
+            "decode_seconds": 0.14012086996808648
+          },
+          "query_seconds": 3.790750445332378,
+          "selected_sid": null,
+          "reference_source_sid": "qa-25e350e421867373",
+          "retrieved_sids": [
+            "qa-25e350e421867373"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3603,
+          "prefix_cache_bytes": 944504832
+        },
+        {
+          "qid": "86f00804",
+          "question": "What book am I currently reading?",
+          "answer": "The Seven Husbands of Evelyn Hugo",
+          "final": {
+            "text": "The Seven Husbands of Evelyn Hugo",
+            "emitted_text": "The Seven Husbands of Evelyn Hugo",
+            "tokens": 9,
+            "token_ids": [
+              791,
+              31048,
+              473,
+              25337,
+              2914,
+              315,
+              96425,
+              52194,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 865861632,
+            "decode_seconds": 0.4306846079416573
+          },
+          "query_seconds": 3.6791906971484423,
+          "selected_sid": null,
+          "reference_source_sid": "qa-1df82c342823c8d0",
+          "retrieved_sids": [
+            "qa-1df82c342823c8d0"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.000000238418579
+          ],
+          "context_tokens": 3254,
+          "prefix_cache_bytes": 853016576
+        },
+        {
+          "qid": "60d45044",
+          "question": "What type of rice is my favorite?",
+          "answer": "Japanese short-grain rice",
+          "final": {
+            "text": "Japanese short-grain rice.",
+            "emitted_text": "Japanese short-grain rice.",
+            "tokens": 7,
+            "token_ids": [
+              52566,
+              2875,
+              25313,
+              467,
+              20228,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 886833152,
+            "decode_seconds": 0.34971025632694364
+          },
+          "query_seconds": 3.7249248060397804,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5b7092482701c35d",
+          "retrieved_sids": [
+            "qa-5b7092482701c35d"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3335,
+          "prefix_cache_bytes": 874250240
+        },
+        {
+          "qid": "7527f7e2",
+          "question": "How much did I spend on a designer handbag?",
+          "answer": "$800",
+          "final": {
+            "text": "$800",
+            "emitted_text": "$800",
+            "tokens": 3,
+            "token_ids": [
+              3,
+              4728,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 961544192,
+            "decode_seconds": 0.18460835982114077
+          },
+          "query_seconds": 3.8772280742414296,
+          "selected_sid": null,
+          "reference_source_sid": "qa-4d000dc7b3195dbb",
+          "retrieved_sids": [
+            "qa-4d000dc7b3195dbb"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3621,
+          "prefix_cache_bytes": 949223424
+        },
+        {
+          "qid": "8a137a7f",
+          "question": "What type of bulb did I replace in my bedside lamp?",
+          "answer": "Philips LED bulb",
+          "final": {
+            "text": "Philips LED bulb.",
+            "emitted_text": "Philips LED bulb.",
+            "tokens": 6,
+            "token_ids": [
+              30690,
+              3153,
+              13414,
+              46912,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 908328960,
+            "decode_seconds": 0.31209334917366505
+          },
+          "query_seconds": 3.769541453104466,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5e4d2d4ee16f9c20",
+          "retrieved_sids": [
+            "qa-5e4d2d4ee16f9c20"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3414,
+          "prefix_cache_bytes": 894959616
+        },
+        {
+          "qid": "8e9d538c",
+          "question": "How many skeins of worsted weight yarn did I find in my stash?",
+          "answer": "17",
+          "final": {
+            "text": "17",
+            "emitted_text": "17",
+            "tokens": 2,
+            "token_ids": [
+              1114,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 964952064,
+            "decode_seconds": 0.14219910791143775
+          },
+          "query_seconds": 3.843679167330265,
+          "selected_sid": null,
+          "reference_source_sid": "qa-d2f6cbdf4e47f77b",
+          "retrieved_sids": [
+            "qa-d2f6cbdf4e47f77b"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3630,
+          "prefix_cache_bytes": 951582720
+        },
+        {
+          "qid": "58bf7951",
+          "question": "What play did I attend at the local community theater?",
+          "answer": "The Glass Menagerie",
+          "final": {
+            "text": "The Glass Menagerie.",
+            "emitted_text": "The Glass Menagerie.",
+            "tokens": 7,
+            "token_ids": [
+              791,
+              21396,
+              11258,
+              1435,
+              648,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 583532544,
+            "decode_seconds": 0.3044465850107372
+          },
+          "query_seconds": 2.4458144269883633,
+          "selected_sid": null,
+          "reference_source_sid": "qa-06daf8e2d3ec5ba6",
+          "retrieved_sids": [
+            "qa-06daf8e2d3ec5ba6"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0000001192092896
+          ],
+          "context_tokens": 2175,
+          "prefix_cache_bytes": 570163200
+        },
+        {
+          "qid": "19b5f2b3",
+          "question": "How long was I in Japan for?",
+          "answer": "two weeks",
+          "final": {
+            "text": "two weeks",
+            "emitted_text": "two weeks",
+            "tokens": 3,
+            "token_ids": [
+              20375,
+              5672,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 963641344,
+            "decode_seconds": 0.18562597315758467
+          },
+          "query_seconds": 3.89274397213012,
+          "selected_sid": null,
+          "reference_source_sid": "qa-e9b6d2c6c5fb4b0c",
+          "retrieved_sids": [
+            "qa-e9b6d2c6c5fb4b0c"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0000001192092896
+          ],
+          "context_tokens": 3632,
+          "prefix_cache_bytes": 952107008
+        },
+        {
+          "qid": "75499fd8",
+          "question": "What breed is my dog?",
+          "answer": "Golden Retriever",
+          "final": {
+            "text": "Golden Retriever.",
+            "emitted_text": "Golden Retriever.",
+            "tokens": 6,
+            "token_ids": [
+              60890,
+              10608,
+              462,
+              2099,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 822083584,
+            "decode_seconds": 0.29914843291044235
+          },
+          "query_seconds": 3.419227544683963,
+          "selected_sid": null,
+          "reference_source_sid": "qa-6766dc7522973b64",
+          "retrieved_sids": [
+            "qa-6766dc7522973b64"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 3091,
+          "prefix_cache_bytes": 810287104
+        },
+        {
+          "qid": "ccb36322",
+          "question": "What is the name of the music streaming service have I been using lately?",
+          "answer": "Spotify",
+          "final": {
+            "text": "Spotify",
+            "emitted_text": "Spotify",
+            "tokens": 3,
+            "token_ids": [
+              6540,
+              38353,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 681312256,
+            "decode_seconds": 0.16850250959396362
+          },
+          "query_seconds": 2.6952194599434733,
+          "selected_sid": null,
+          "reference_source_sid": "qa-409ec3d94e3fb69d",
+          "retrieved_sids": [
+            "qa-409ec3d94e3fb69d"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0
+          ],
+          "context_tokens": 2548,
+          "prefix_cache_bytes": 667942912
+        },
+        {
+          "qid": "726462e0",
+          "question": "What was the discount I got on my first purchase from the new clothing brand?",
+          "answer": "10%",
+          "final": {
+            "text": "10%",
+            "emitted_text": "10%",
+            "tokens": 3,
+            "token_ids": [
+              605,
+              4,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 909639680,
+            "decode_seconds": 0.18378866370767355
+          },
+          "query_seconds": 3.6563590499572456,
+          "selected_sid": null,
+          "reference_source_sid": "qa-477266164f82bcac",
+          "retrieved_sids": [
+            "qa-477266164f82bcac"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.9999999403953552
+          ],
+          "context_tokens": 3418,
+          "prefix_cache_bytes": 896008192
+        },
+        {
+          "qid": "f4f1d8a4",
+          "question": "Who gave me a new stand mixer as a birthday gift?",
+          "answer": "my sister",
+          "final": {
+            "text": "my sister",
+            "emitted_text": "my sister",
+            "tokens": 3,
+            "token_ids": [
+              2465,
+              13219,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 662437888,
+            "decode_seconds": 0.16648941906169057
+          },
+          "query_seconds": 2.6326191211119294,
+          "selected_sid": null,
+          "reference_source_sid": "qa-926891d5b85d9432",
+          "retrieved_sids": [
+            "qa-926891d5b85d9432"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            1.0000001192092896
+          ],
+          "context_tokens": 2479,
+          "prefix_cache_bytes": 649854976
+        }
+      ],
+      "summary": {
+        "n": 24,
+        "returned_exact": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "emitted_exact": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "verbatim_exact": {
+          "count": 14,
+          "rate": 0.5833333333333334,
+          "ci95": [
+            0.3883466586522876,
+            0.7553239739018824
+          ]
+        },
+        "contains_reference": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "hit_cap": {
+          "count": 0,
+          "rate": 0.0,
+          "ci95": [
+            1.3877787807814457e-17,
+            0.13797620467498017
+          ]
+        },
+        "eos": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "retrieval_at1": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "retrieval_at3": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "mean_token_f1": 1.0,
+        "mean_output_tokens": 4.875,
+        "mean_query_seconds": 3.4308731055352837,
+        "max_query_cache_payload_bytes": 1224998912
+      },
+      "resources": {
+        "elapsed_seconds": 86.04913973994553,
+        "peak_allocated_bytes": 33615307776,
+        "peak_reserved_bytes": 34938552320,
+        "end_allocated_bytes": 32220426240,
+        "persistent_payload_bytes": 388484,
+        "persistent_tier": "CPU text/index files",
+        "additional_model_bytes": 90852864,
+        "max_decode_kv_bytes": 1224998912,
+        "storage_files": [
+          "bank.json",
+          "qa_embeddings.pt"
+        ]
+      }
+    },
+    "rag_context_only": {
+      "trials": [
+        {
+          "qid": "c19f7a0b",
+          "question": "What time do I usually get home from work on weeknights?",
+          "answer": "6:30 pm",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 147324928,
+            "decode_seconds": 0.13262538611888885
+          },
+          "query_seconds": 0.6283043739385903,
+          "selected_sid": null,
+          "reference_source_sid": "qa-61f8b11e140a0959",
+          "retrieved_sids": [
+            "qa-f9b851f19b8ef12b",
+            "qa-61f8b11e140a0959",
+            "qa-f9b851f19b8ef12b"
+          ],
+          "retrieval_at1": false,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.3949119448661804,
+            0.363523006439209,
+            0.3588702082633972
+          ],
+          "context_tokens": 512,
+          "prefix_cache_bytes": 134217728
+        },
+        {
+          "qid": "c960da58",
+          "question": "How many playlists do I have on Spotify?",
+          "answer": "20",
+          "final": {
+            "text": "20",
+            "emitted_text": "20",
+            "tokens": 2,
+            "token_ids": [
+              508,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 162267136,
+            "decode_seconds": 0.10476189199835062
+          },
+          "query_seconds": 0.675047917291522,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5f7b615f26178791",
+          "retrieved_sids": [
+            "qa-5f7b615f26178791",
+            "qa-5f7b615f26178791",
+            "qa-5f7b615f26178791"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.6270064115524292,
+            0.5501080751419067,
+            0.5345355868339539
+          ],
+          "context_tokens": 575,
+          "prefix_cache_bytes": 150732800
+        },
+        {
+          "qid": "3b6f954b",
+          "question": "Where did I attend for my study abroad program?",
+          "answer": "University of Melbourne in Australia",
+          "final": {
+            "text": "University of Melbourne.",
+            "emitted_text": "University of Melbourne.",
+            "tokens": 5,
+            "token_ids": [
+              31272,
+              315,
+              27535,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 129499136,
+            "decode_seconds": 0.1825549378991127
+          },
+          "query_seconds": 0.6194548457860947,
+          "selected_sid": null,
+          "reference_source_sid": "qa-f9b851f19b8ef12b",
+          "retrieved_sids": [
+            "qa-f9b851f19b8ef12b",
+            "qa-f9b851f19b8ef12b",
+            "qa-e9b6d2c6c5fb4b0c"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.7499999999999999,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.35985392332077026,
+            0.2661097049713135,
+            0.2349056601524353
+          ],
+          "context_tokens": 446,
+          "prefix_cache_bytes": 116916224
+        },
+        {
+          "qid": "94f70d80",
+          "question": "How long did it take me to assemble the IKEA bookshelf?",
+          "answer": "4 hours",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 155189248,
+            "decode_seconds": 0.13257043110206723
+          },
+          "query_seconds": 0.6692148000001907,
+          "selected_sid": null,
+          "reference_source_sid": "qa-404d8b00a0cc6356",
+          "retrieved_sids": [
+            "qa-404d8b00a0cc6356",
+            "qa-404d8b00a0cc6356",
+            "qa-404d8b00a0cc6356"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5950064063072205,
+            0.5949141383171082,
+            0.5805753469467163
+          ],
+          "context_tokens": 542,
+          "prefix_cache_bytes": 142082048
+        },
+        {
+          "qid": "dccbc061",
+          "question": "What was my previous stance on spirituality?",
+          "answer": "A staunch atheist",
+          "final": {
+            "text": "staunch atheist",
+            "emitted_text": "staunch atheist",
+            "tokens": 4,
+            "token_ids": [
+              267,
+              18930,
+              67464,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 120061952,
+            "decode_seconds": 0.15662464499473572
+          },
+          "query_seconds": 0.5741183436475694,
+          "selected_sid": null,
+          "reference_source_sid": "qa-91b2ce1d83206887",
+          "retrieved_sids": [
+            "qa-91b2ce1d83206887",
+            "qa-91b2ce1d83206887",
+            "qa-91b2ce1d83206887"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.8,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5286030769348145,
+            0.4868205189704895,
+            0.4510241448879242
+          ],
+          "context_tokens": 413,
+          "prefix_cache_bytes": 108265472
+        },
+        {
+          "qid": "311778f1",
+          "question": "How many hours did I spend watching documentaries on Netflix last month?",
+          "answer": "10",
+          "final": {
+            "text": "10 hours",
+            "emitted_text": "10 hours",
+            "tokens": 3,
+            "token_ids": [
+              605,
+              4207,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 167510016,
+            "decode_seconds": 0.13190486887469888
+          },
+          "query_seconds": 0.7336007291451097,
+          "selected_sid": null,
+          "reference_source_sid": "qa-67ce7b3893aa26db",
+          "retrieved_sids": [
+            "qa-67ce7b3893aa26db",
+            "qa-67ce7b3893aa26db",
+            "qa-67ce7b3893aa26db"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.6666666666666666,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.6314953565597534,
+            0.5196752548217773,
+            0.49768301844596863
+          ],
+          "context_tokens": 590,
+          "prefix_cache_bytes": 154664960
+        },
+        {
+          "qid": "b86304ba",
+          "question": "How much is the painting of a sunset worth in terms of the amount I paid for it?",
+          "answer": "The painting is worth triple what I paid for it.",
+          "final": {
+            "text": "Unknown",
+            "emitted_text": "Unknown",
+            "tokens": 2,
+            "token_ids": [
+              14109,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 158597120,
+            "decode_seconds": 0.10537471110001206
+          },
+          "query_seconds": 0.6717987721785903,
+          "selected_sid": null,
+          "reference_source_sid": "qa-66f0a0646e0bbe88",
+          "retrieved_sids": [
+            "qa-66f0a0646e0bbe88",
+            "qa-66f0a0646e0bbe88",
+            "qa-66f0a0646e0bbe88"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5079228281974792,
+            0.4902358055114746,
+            0.4851602613925934
+          ],
+          "context_tokens": 551,
+          "prefix_cache_bytes": 144441344
+        },
+        {
+          "qid": "5d3d2817",
+          "question": "What was my previous occupation?",
+          "answer": "Marketing specialist at a small startup",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 162529280,
+            "decode_seconds": 0.13122553192079067
+          },
+          "query_seconds": 0.7324150088243186,
+          "selected_sid": null,
+          "reference_source_sid": "qa-4fbc48ccc11248f5",
+          "retrieved_sids": [
+            "qa-66f0a0646e0bbe88",
+            "qa-66f0a0646e0bbe88",
+            "qa-fd14cb14ca42ac1a"
+          ],
+          "retrieval_at1": false,
+          "retrieval_at3": false,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.26128196716308594,
+            0.22035300731658936,
+            0.21959801018238068
+          ],
+          "context_tokens": 578,
+          "prefix_cache_bytes": 151519232
+        },
+        {
+          "qid": "37d43f65",
+          "question": "How much RAM did I upgrade my laptop to?",
+          "answer": "16GB",
+          "final": {
+            "text": "16gb.",
+            "emitted_text": "16gb.",
+            "tokens": 4,
+            "token_ids": [
+              845,
+              9701,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 145752064,
+            "decode_seconds": 0.15889597311615944
+          },
+          "query_seconds": 0.6489273100160062,
+          "selected_sid": null,
+          "reference_source_sid": "qa-84865ef74bd0da32",
+          "retrieved_sids": [
+            "qa-84865ef74bd0da32",
+            "qa-84865ef74bd0da32",
+            "qa-84865ef74bd0da32"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.46754544973373413,
+            0.4522060751914978,
+            0.45053529739379883
+          ],
+          "context_tokens": 509,
+          "prefix_cache_bytes": 133431296
+        },
+        {
+          "qid": "d52b4f67",
+          "question": "Where did I attend my cousin's wedding?",
+          "answer": "The Grand Ballroom",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 123207680,
+            "decode_seconds": 0.1300766789354384
+          },
+          "query_seconds": 0.5676035466603935,
+          "selected_sid": null,
+          "reference_source_sid": "qa-cc3f1b35753ebc44",
+          "retrieved_sids": [
+            "qa-cc3f1b35753ebc44",
+            "qa-409ec3d94e3fb69d",
+            "qa-5f7b615f26178791"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.3630266785621643,
+            0.28781452775001526,
+            0.2650582194328308
+          ],
+          "context_tokens": 425,
+          "prefix_cache_bytes": 111411200
+        },
+        {
+          "qid": "51a45a95",
+          "question": "Where did I redeem a $5 coupon on coffee creamer?",
+          "answer": "Target",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 149159936,
+            "decode_seconds": 0.13077586190775037
+          },
+          "query_seconds": 0.6616108738817275,
+          "selected_sid": null,
+          "reference_source_sid": "qa-1799915ffb3ad52b",
+          "retrieved_sids": [
+            "qa-1799915ffb3ad52b",
+            "qa-1799915ffb3ad52b",
+            "qa-1799915ffb3ad52b"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.8492079377174377,
+            0.4908415973186493,
+            0.40756285190582275
+          ],
+          "context_tokens": 520,
+          "prefix_cache_bytes": 136314880
+        },
+        {
+          "qid": "a82c026e",
+          "question": "What game did I finally beat last weekend?",
+          "answer": "Dark Souls 3 DLC",
+          "final": {
+            "text": "Dark Souls 3 DLC.",
+            "emitted_text": "Dark Souls 3 DLC.",
+            "tokens": 7,
+            "token_ids": [
+              26915,
+              58770,
+              220,
+              18,
+              44019,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 120848384,
+            "decode_seconds": 0.23453080095350742
+          },
+          "query_seconds": 0.6544131501577795,
+          "selected_sid": null,
+          "reference_source_sid": "qa-fd14cb14ca42ac1a",
+          "retrieved_sids": [
+            "qa-fd14cb14ca42ac1a",
+            "qa-fd14cb14ca42ac1a",
+            "qa-fd14cb14ca42ac1a"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.22332128882408142,
+            0.21902278065681458,
+            0.21670439839363098
+          ],
+          "context_tokens": 412,
+          "prefix_cache_bytes": 108003328
+        },
+        {
+          "qid": "6b168ec8",
+          "question": "How many bikes do I own?",
+          "answer": "three",
+          "final": {
+            "text": "Three.",
+            "emitted_text": "Three.",
+            "tokens": 3,
+            "token_ids": [
+              20215,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 174325760,
+            "decode_seconds": 0.13270016526803374
+          },
+          "query_seconds": 0.7580716842785478,
+          "selected_sid": null,
+          "reference_source_sid": "qa-25e350e421867373",
+          "retrieved_sids": [
+            "qa-25e350e421867373",
+            "qa-25e350e421867373",
+            "qa-25e350e421867373"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5125998258590698,
+            0.4752134382724762,
+            0.459980845451355
+          ],
+          "context_tokens": 622,
+          "prefix_cache_bytes": 163053568
+        },
+        {
+          "qid": "86f00804",
+          "question": "What book am I currently reading?",
+          "answer": "The Seven Husbands of Evelyn Hugo",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 123994112,
+            "decode_seconds": 0.1294399299658835
+          },
+          "query_seconds": 0.5674921530298889,
+          "selected_sid": null,
+          "reference_source_sid": "qa-1df82c342823c8d0",
+          "retrieved_sids": [
+            "qa-1df82c342823c8d0",
+            "qa-1df82c342823c8d0",
+            "qa-1df82c342823c8d0"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5164856314659119,
+            0.5120118856430054,
+            0.5032702684402466
+          ],
+          "context_tokens": 430,
+          "prefix_cache_bytes": 112721920
+        },
+        {
+          "qid": "60d45044",
+          "question": "What type of rice is my favorite?",
+          "answer": "Japanese short-grain rice",
+          "final": {
+            "text": "Japanese short-grain rice.",
+            "emitted_text": "Japanese short-grain rice.",
+            "tokens": 7,
+            "token_ids": [
+              52566,
+              2875,
+              25313,
+              467,
+              20228,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 125829120,
+            "decode_seconds": 0.2347618560306728
+          },
+          "query_seconds": 0.6712440429255366,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5b7092482701c35d",
+          "retrieved_sids": [
+            "qa-5b7092482701c35d",
+            "qa-5b7092482701c35d",
+            "qa-5b7092482701c35d"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5612996220588684,
+            0.5039418935775757,
+            0.5026341676712036
+          ],
+          "context_tokens": 432,
+          "prefix_cache_bytes": 113246208
+        },
+        {
+          "qid": "7527f7e2",
+          "question": "How much did I spend on a designer handbag?",
+          "answer": "$800",
+          "final": {
+            "text": "$800",
+            "emitted_text": "$800",
+            "tokens": 3,
+            "token_ids": [
+              3,
+              4728,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 130023424,
+            "decode_seconds": 0.13099751994013786
+          },
+          "query_seconds": 0.6063602692447603,
+          "selected_sid": null,
+          "reference_source_sid": "qa-4d000dc7b3195dbb",
+          "retrieved_sids": [
+            "qa-4d000dc7b3195dbb",
+            "qa-4d000dc7b3195dbb",
+            "qa-4d000dc7b3195dbb"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5638077259063721,
+            0.5322597026824951,
+            0.4473072588443756
+          ],
+          "context_tokens": 449,
+          "prefix_cache_bytes": 117702656
+        },
+        {
+          "qid": "8a137a7f",
+          "question": "What type of bulb did I replace in my bedside lamp?",
+          "answer": "Philips LED bulb",
+          "final": {
+            "text": "Philips LED bulb.",
+            "emitted_text": "Philips LED bulb.",
+            "tokens": 6,
+            "token_ids": [
+              30690,
+              3153,
+              13414,
+              46912,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 144179200,
+            "decode_seconds": 0.21245829202234745
+          },
+          "query_seconds": 0.7022647559642792,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5e4d2d4ee16f9c20",
+          "retrieved_sids": [
+            "qa-5e4d2d4ee16f9c20",
+            "qa-5e4d2d4ee16f9c20",
+            "qa-5e4d2d4ee16f9c20"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.4428446888923645,
+            0.42470812797546387,
+            0.4066373407840729
+          ],
+          "context_tokens": 499,
+          "prefix_cache_bytes": 130809856
+        },
+        {
+          "qid": "8e9d538c",
+          "question": "How many skeins of worsted weight yarn did I find in my stash?",
+          "answer": "17",
+          "final": {
+            "text": "17 skeins.",
+            "emitted_text": "17 skeins.",
+            "tokens": 5,
+            "token_ids": [
+              1114,
+              16098,
+              1354,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 143130624,
+            "decode_seconds": 0.18661291990429163
+          },
+          "query_seconds": 0.6763436002656817,
+          "selected_sid": null,
+          "reference_source_sid": "qa-d2f6cbdf4e47f77b",
+          "retrieved_sids": [
+            "qa-d2f6cbdf4e47f77b",
+            "qa-d2f6cbdf4e47f77b",
+            "qa-d2f6cbdf4e47f77b"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.6666666666666666,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.6420440673828125,
+            0.48276543617248535,
+            0.46627211570739746
+          ],
+          "context_tokens": 492,
+          "prefix_cache_bytes": 128974848
+        },
+        {
+          "qid": "58bf7951",
+          "question": "What play did I attend at the local community theater?",
+          "answer": "The Glass Menagerie",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 119013376,
+            "decode_seconds": 0.13030883530154824
+          },
+          "query_seconds": 0.5486051477491856,
+          "selected_sid": null,
+          "reference_source_sid": "qa-06daf8e2d3ec5ba6",
+          "retrieved_sids": [
+            "qa-06daf8e2d3ec5ba6",
+            "qa-06daf8e2d3ec5ba6",
+            "qa-409ec3d94e3fb69d"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5096737742424011,
+            0.5057275295257568,
+            0.49474045634269714
+          ],
+          "context_tokens": 407,
+          "prefix_cache_bytes": 106692608
+        },
+        {
+          "qid": "19b5f2b3",
+          "question": "How long was I in Japan for?",
+          "answer": "two weeks",
+          "final": {
+            "text": "two weeks",
+            "emitted_text": "two weeks",
+            "tokens": 3,
+            "token_ids": [
+              20375,
+              5672,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 76546048,
+            "decode_seconds": 0.12740246998146176
+          },
+          "query_seconds": 0.3769319620914757,
+          "selected_sid": null,
+          "reference_source_sid": "qa-e9b6d2c6c5fb4b0c",
+          "retrieved_sids": [
+            "qa-e9b6d2c6c5fb4b0c",
+            "qa-e9b6d2c6c5fb4b0c",
+            "qa-e9b6d2c6c5fb4b0c"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.43551257252693176,
+            0.4279692769050598,
+            0.4176982641220093
+          ],
+          "context_tokens": 248,
+          "prefix_cache_bytes": 65011712
+        },
+        {
+          "qid": "75499fd8",
+          "question": "What breed is my dog?",
+          "answer": "Golden Retriever",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 123469824,
+            "decode_seconds": 0.12919902615249157
+          },
+          "query_seconds": 0.5637842831201851,
+          "selected_sid": null,
+          "reference_source_sid": "qa-6766dc7522973b64",
+          "retrieved_sids": [
+            "qa-6766dc7522973b64",
+            "qa-6766dc7522973b64",
+            "qa-6766dc7522973b64"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.470608651638031,
+            0.4594687521457672,
+            0.39868906140327454
+          ],
+          "context_tokens": 429,
+          "prefix_cache_bytes": 112459776
+        },
+        {
+          "qid": "ccb36322",
+          "question": "What is the name of the music streaming service have I been using lately?",
+          "answer": "Spotify",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 193986560,
+            "decode_seconds": 0.13537712395191193
+          },
+          "query_seconds": 0.8159719090908766,
+          "selected_sid": null,
+          "reference_source_sid": "qa-409ec3d94e3fb69d",
+          "retrieved_sids": [
+            "qa-5f7b615f26178791",
+            "qa-5f7b615f26178791",
+            "qa-5f7b615f26178791"
+          ],
+          "retrieval_at1": false,
+          "retrieval_at3": false,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.544474720954895,
+            0.5247756242752075,
+            0.508215606212616
+          ],
+          "context_tokens": 689,
+          "prefix_cache_bytes": 180617216
+        },
+        {
+          "qid": "726462e0",
+          "question": "What was the discount I got on my first purchase from the new clothing brand?",
+          "answer": "10%",
+          "final": {
+            "text": "Unknown.",
+            "emitted_text": "Unknown.",
+            "tokens": 3,
+            "token_ids": [
+              14109,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 159383552,
+            "decode_seconds": 0.13318359712138772
+          },
+          "query_seconds": 0.7017367449589074,
+          "selected_sid": null,
+          "reference_source_sid": "qa-477266164f82bcac",
+          "retrieved_sids": [
+            "qa-4d000dc7b3195dbb",
+            "qa-4d000dc7b3195dbb",
+            "qa-4d000dc7b3195dbb"
+          ],
+          "retrieval_at1": false,
+          "retrieval_at3": false,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.0,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.5217282772064209,
+            0.4639784097671509,
+            0.45393693447113037
+          ],
+          "context_tokens": 556,
+          "prefix_cache_bytes": 145752064
+        },
+        {
+          "qid": "f4f1d8a4",
+          "question": "Who gave me a new stand mixer as a birthday gift?",
+          "answer": "my sister",
+          "final": {
+            "text": "sister",
+            "emitted_text": "sister",
+            "tokens": 3,
+            "token_ids": [
+              82,
+              1601,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 80740352,
+            "decode_seconds": 0.12636052491143346
+          },
+          "query_seconds": 0.4113032650202513,
+          "selected_sid": null,
+          "reference_source_sid": "qa-926891d5b85d9432",
+          "retrieved_sids": [
+            "qa-926891d5b85d9432",
+            "qa-cc3f1b35753ebc44",
+            "qa-1799915ffb3ad52b"
+          ],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.6666666666666666,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "retrieval_scores": [
+            0.4486798644065857,
+            0.4271213710308075,
+            0.3598936200141907
+          ],
+          "context_tokens": 260,
+          "prefix_cache_bytes": 68157440
+        }
+      ],
+      "summary": {
+        "n": 24,
+        "returned_exact": {
+          "count": 8,
+          "rate": 0.3333333333333333,
+          "ci95": [
+            0.1797219032729775,
+            0.5329368316186824
+          ]
+        },
+        "emitted_exact": {
+          "count": 8,
+          "rate": 0.3333333333333333,
+          "ci95": [
+            0.1797219032729775,
+            0.5329368316186824
+          ]
+        },
+        "verbatim_exact": {
+          "count": 3,
+          "rate": 0.125,
+          "ci95": [
+            0.04344334080123444,
+            0.31003881270500067
+          ]
+        },
+        "contains_reference": {
+          "count": 10,
+          "rate": 0.4166666666666667,
+          "ci95": [
+            0.24467602609811764,
+            0.6116533413477124
+          ]
+        },
+        "hit_cap": {
+          "count": 0,
+          "rate": 0.0,
+          "ci95": [
+            1.3877787807814457e-17,
+            0.13797620467498017
+          ]
+        },
+        "eos": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "retrieval_at1": {
+          "count": 20,
+          "rate": 0.8333333333333334,
+          "ci95": [
+            0.6414692935030095,
+            0.9332132367136705
+          ]
+        },
+        "retrieval_at3": {
+          "count": 21,
+          "rate": 0.875,
+          "ci95": [
+            0.6899611872949993,
+            0.9565566591987655
+          ]
+        },
+        "mean_token_f1": 0.48125,
+        "mean_output_tokens": 3.625,
+        "mean_query_seconds": 0.6348591453861445,
+        "max_query_cache_payload_bytes": 193986560
+      },
+      "resources": {
+        "elapsed_seconds": 18.8032411262393,
+        "peak_allocated_bytes": 32452498944,
+        "peak_reserved_bytes": 32623296512,
+        "end_allocated_bytes": 32220426240,
+        "persistent_payload_bytes": 1394472,
+        "persistent_tier": "CPU text/index files",
+        "additional_model_bytes": 90852864,
+        "max_decode_kv_bytes": 193986560,
+        "storage_files": [
+          "context_chunks.json",
+          "context_embeddings.pt"
+        ]
+      }
+    },
+    "kv_full_qa": {
+      "trials": [
+        {
+          "qid": "c19f7a0b",
+          "question": "What time do I usually get home from work on weeknights?",
+          "answer": "6:30 pm",
+          "final": {
+            "text": "You usually get home from work around 6:30 pm on weeknights.",
+            "emitted_text": "You usually get home from work around 6:30 pm on weeknights.",
+            "tokens": 18,
+            "token_ids": [
+              2675,
+              6118,
+              636,
+              2162,
+              505,
+              990,
+              2212,
+              220,
+              21,
+              25,
+              966,
+              9012,
+              389,
+              2046,
+              77,
+              2866,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19254214656,
+            "decode_seconds": 8.563517456874251
+          },
+          "query_seconds": 8.572432221844792,
+          "selected_sid": null,
+          "reference_source_sid": "qa-61f8b11e140a0959",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.4,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "c960da58",
+          "question": "How many playlists do I have on Spotify?",
+          "answer": "20",
+          "final": {
+            "text": "You have 20 playlists on Spotify.",
+            "emitted_text": "You have 20 playlists on Spotify.",
+            "tokens": 9,
+            "token_ids": [
+              2675,
+              617,
+              220,
+              508,
+              69908,
+              389,
+              41637,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19250544640,
+            "decode_seconds": 4.327345661818981
+          },
+          "query_seconds": 4.335948697756976,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5f7b615f26178791",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.2857142857142857,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "3b6f954b",
+          "question": "Where did I attend for my study abroad program?",
+          "answer": "University of Melbourne in Australia",
+          "final": {
+            "text": "You attended the University of Melbourne in Australia for your study abroad program.",
+            "emitted_text": "You attended the University of Melbourne in Australia for your study abroad program.",
+            "tokens": 15,
+            "token_ids": [
+              2675,
+              18677,
+              279,
+              3907,
+              315,
+              27535,
+              304,
+              8494,
+              369,
+              701,
+              4007,
+              22917,
+              2068,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19252379648,
+            "decode_seconds": 7.147334488108754
+          },
+          "query_seconds": 7.156339761801064,
+          "selected_sid": null,
+          "reference_source_sid": "qa-f9b851f19b8ef12b",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.5555555555555556,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "94f70d80",
+          "question": "How long did it take me to assemble the IKEA bookshelf?",
+          "answer": "4 hours",
+          "final": {
+            "text": "You assembled the IKEA bookshelf in 4 hours.",
+            "emitted_text": "You assembled the IKEA bookshelf in 4 hours.",
+            "tokens": 13,
+            "token_ids": [
+              2675,
+              35105,
+              279,
+              85464,
+              32,
+              2363,
+              55050,
+              304,
+              220,
+              19,
+              4207,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19252903936,
+            "decode_seconds": 6.208336323034018
+          },
+          "query_seconds": 6.217000181321055,
+          "selected_sid": null,
+          "reference_source_sid": "qa-404d8b00a0cc6356",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.4,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "dccbc061",
+          "question": "What was my previous stance on spirituality?",
+          "answer": "A staunch atheist",
+          "final": {
+            "text": "You were a staunch atheist.",
+            "emitted_text": "You were a staunch atheist.",
+            "tokens": 7,
+            "token_ids": [
+              2675,
+              1051,
+              264,
+              82721,
+              67464,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19249758208,
+            "decode_seconds": 3.38725472567603
+          },
+          "query_seconds": 3.395782630890608,
+          "selected_sid": null,
+          "reference_source_sid": "qa-91b2ce1d83206887",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.7499999999999999,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "311778f1",
+          "question": "How many hours did I spend watching documentaries on Netflix last month?",
+          "answer": "10",
+          "final": {
+            "text": "You spent 10 hours watching documentaries on Netflix last month.",
+            "emitted_text": "You spent 10 hours watching documentaries on Netflix last month.",
+            "tokens": 13,
+            "token_ids": [
+              2675,
+              7543,
+              220,
+              605,
+              4207,
+              10307,
+              88466,
+              389,
+              23469,
+              1566,
+              2305,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19252641792,
+            "decode_seconds": 6.20734277786687
+          },
+          "query_seconds": 6.216273112222552,
+          "selected_sid": null,
+          "reference_source_sid": "qa-67ce7b3893aa26db",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.18181818181818182,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "b86304ba",
+          "question": "How much is the painting of a sunset worth in terms of the amount I paid for it?",
+          "answer": "The painting is worth triple what I paid for it.",
+          "final": {
+            "text": "The painting of a sunset is worth triple what you paid for it.",
+            "emitted_text": "The painting of a sunset is worth triple what you paid for it.",
+            "tokens": 15,
+            "token_ids": [
+              791,
+              19354,
+              315,
+              264,
+              44084,
+              374,
+              5922,
+              24657,
+              1148,
+              499,
+              7318,
+              369,
+              433,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19254738944,
+            "decode_seconds": 7.1513553550466895
+          },
+          "query_seconds": 7.160163632128388,
+          "selected_sid": null,
+          "reference_source_sid": "qa-66f0a0646e0bbe88",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.7826086956521738,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "5d3d2817",
+          "question": "What was my previous occupation?",
+          "answer": "Marketing specialist at a small startup",
+          "final": {
+            "text": "Your previous occupation was a marketing specialist at a small startup.",
+            "emitted_text": "Your previous occupation was a marketing specialist at a small startup.",
+            "tokens": 13,
+            "token_ids": [
+              7927,
+              3766,
+              30747,
+              574,
+              264,
+              8661,
+              24687,
+              520,
+              264,
+              2678,
+              21210,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19250806784,
+            "decode_seconds": 6.205578039865941
+          },
+          "query_seconds": 6.214141120202839,
+          "selected_sid": null,
+          "reference_source_sid": "qa-4fbc48ccc11248f5",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.7058823529411764,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "37d43f65",
+          "question": "How much RAM did I upgrade my laptop to?",
+          "answer": "16GB",
+          "final": {
+            "text": "You upgraded your laptop to 16GB of RAM.",
+            "emitted_text": "You upgraded your laptop to 16GB of RAM.",
+            "tokens": 12,
+            "token_ids": [
+              2675,
+              33624,
+              701,
+              21288,
+              311,
+              220,
+              845,
+              5494,
+              315,
+              22813,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19251593216,
+            "decode_seconds": 5.737302418798208
+          },
+          "query_seconds": 5.745874816086143,
+          "selected_sid": null,
+          "reference_source_sid": "qa-84865ef74bd0da32",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.2222222222222222,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "d52b4f67",
+          "question": "Where did I attend my cousin's wedding?",
+          "answer": "The Grand Ballroom",
+          "final": {
+            "text": "The Grand Ballroom.",
+            "emitted_text": "The Grand Ballroom.",
+            "tokens": 6,
+            "token_ids": [
+              791,
+              10517,
+              13131,
+              3039,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19249758208,
+            "decode_seconds": 2.9187953867949545
+          },
+          "query_seconds": 2.927225227933377,
+          "selected_sid": null,
+          "reference_source_sid": "qa-cc3f1b35753ebc44",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "51a45a95",
+          "question": "Where did I redeem a $5 coupon on coffee creamer?",
+          "answer": "Target",
+          "final": {
+            "text": "Target.",
+            "emitted_text": "Target.",
+            "tokens": 3,
+            "token_ids": [
+              6531,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19250020352,
+            "decode_seconds": 1.510662229731679
+          },
+          "query_seconds": 1.5190768940374255,
+          "selected_sid": null,
+          "reference_source_sid": "qa-1799915ffb3ad52b",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "a82c026e",
+          "question": "What game did I finally beat last weekend?",
+          "answer": "Dark Souls 3 DLC",
+          "final": {
+            "text": "Dark Souls 3 DLC.",
+            "emitted_text": "Dark Souls 3 DLC.",
+            "tokens": 7,
+            "token_ids": [
+              26915,
+              58770,
+              220,
+              18,
+              44019,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19250020352,
+            "decode_seconds": 3.387662990950048
+          },
+          "query_seconds": 3.396161570213735,
+          "selected_sid": null,
+          "reference_source_sid": "qa-fd14cb14ca42ac1a",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "6b168ec8",
+          "question": "How many bikes do I own?",
+          "answer": "three",
+          "final": {
+            "text": "You own three bikes.",
+            "emitted_text": "You own three bikes.",
+            "tokens": 6,
+            "token_ids": [
+              2675,
+              1866,
+              2380,
+              31553,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19249233920,
+            "decode_seconds": 2.918414588086307
+          },
+          "query_seconds": 2.9270137841813266,
+          "selected_sid": null,
+          "reference_source_sid": "qa-25e350e421867373",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.4,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "86f00804",
+          "question": "What book am I currently reading?",
+          "answer": "The Seven Husbands of Evelyn Hugo",
+          "final": {
+            "text": "The Seven Husbands of Evelyn Hugo",
+            "emitted_text": "The Seven Husbands of Evelyn Hugo",
+            "tokens": 9,
+            "token_ids": [
+              791,
+              31048,
+              473,
+              25337,
+              2914,
+              315,
+              96425,
+              52194,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19250020352,
+            "decode_seconds": 4.326580442953855
+          },
+          "query_seconds": 4.335482673719525,
+          "selected_sid": null,
+          "reference_source_sid": "qa-1df82c342823c8d0",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "60d45044",
+          "question": "What type of rice is my favorite?",
+          "answer": "Japanese short-grain rice",
+          "final": {
+            "text": "Japanese short-grain rice.",
+            "emitted_text": "Japanese short-grain rice.",
+            "tokens": 7,
+            "token_ids": [
+              52566,
+              2875,
+              25313,
+              467,
+              20228,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19249758208,
+            "decode_seconds": 3.388216300867498
+          },
+          "query_seconds": 3.3968543889932334,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5b7092482701c35d",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "7527f7e2",
+          "question": "How much did I spend on a designer handbag?",
+          "answer": "$800",
+          "final": {
+            "text": "You spent $800 on a designer handbag.",
+            "emitted_text": "You spent $800 on a designer handbag.",
+            "tokens": 11,
+            "token_ids": [
+              2675,
+              7543,
+              400,
+              4728,
+              389,
+              264,
+              15034,
+              1450,
+              21946,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19251593216,
+            "decode_seconds": 5.268043329007924
+          },
+          "query_seconds": 5.276814724784344,
+          "selected_sid": null,
+          "reference_source_sid": "qa-4d000dc7b3195dbb",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.25,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "8a137a7f",
+          "question": "What type of bulb did I replace in my bedside lamp?",
+          "answer": "Philips LED bulb",
+          "final": {
+            "text": "You replaced a Philips LED bulb in your bedside lamp.",
+            "emitted_text": "You replaced a Philips LED bulb in your bedside lamp.",
+            "tokens": 12,
+            "token_ids": [
+              2675,
+              12860,
+              264,
+              74603,
+              13414,
+              46912,
+              304,
+              701,
+              96803,
+              29062,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19252117504,
+            "decode_seconds": 5.738636843860149
+          },
+          "query_seconds": 5.747363055124879,
+          "selected_sid": null,
+          "reference_source_sid": "qa-5e4d2d4ee16f9c20",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.4615384615384615,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "8e9d538c",
+          "question": "How many skeins of worsted weight yarn did I find in my stash?",
+          "answer": "17",
+          "final": {
+            "text": "17 skeins of worsted weight yarn.",
+            "emitted_text": "17 skeins of worsted weight yarn.",
+            "tokens": 10,
+            "token_ids": [
+              1114,
+              16098,
+              1354,
+              315,
+              12047,
+              291,
+              4785,
+              39347,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19252641792,
+            "decode_seconds": 4.801676218863577
+          },
+          "query_seconds": 4.810253384057432,
+          "selected_sid": null,
+          "reference_source_sid": "qa-d2f6cbdf4e47f77b",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.2857142857142857,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "58bf7951",
+          "question": "What play did I attend at the local community theater?",
+          "answer": "The Glass Menagerie",
+          "final": {
+            "text": "The Glass Menagerie.",
+            "emitted_text": "The Glass Menagerie.",
+            "tokens": 7,
+            "token_ids": [
+              791,
+              21396,
+              11258,
+              1435,
+              648,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19250544640,
+            "decode_seconds": 3.389470977243036
+          },
+          "query_seconds": 3.3979265647940338,
+          "selected_sid": null,
+          "reference_source_sid": "qa-06daf8e2d3ec5ba6",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": false,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "19b5f2b3",
+          "question": "How long was I in Japan for?",
+          "answer": "two weeks",
+          "final": {
+            "text": "You were in Japan for two weeks.",
+            "emitted_text": "You were in Japan for two weeks.",
+            "tokens": 9,
+            "token_ids": [
+              2675,
+              1051,
+              304,
+              6457,
+              369,
+              1403,
+              5672,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19250282496,
+            "decode_seconds": 4.326869455166161
+          },
+          "query_seconds": 4.335539773106575,
+          "selected_sid": null,
+          "reference_source_sid": "qa-e9b6d2c6c5fb4b0c",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.4444444444444445,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "75499fd8",
+          "question": "What breed is my dog?",
+          "answer": "Golden Retriever",
+          "final": {
+            "text": "I don't have any information about your dog's breed. You mentioned earlier that your dog is a Golden Retriever.",
+            "emitted_text": "I don't have any information about your dog's breed. You mentioned earlier that your dog is a Golden Retriever.",
+            "tokens": 26,
+            "token_ids": [
+              40,
+              1541,
+              956,
+              617,
+              904,
+              2038,
+              922,
+              701,
+              5679,
+              596,
+              28875,
+              13,
+              1472,
+              9932,
+              6931,
+              430,
+              701,
+              5679,
+              374,
+              264,
+              18288,
+              10608,
+              462,
+              2099,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19254214656,
+            "decode_seconds": 12.315261086914688
+          },
+          "query_seconds": 12.32416371582076,
+          "selected_sid": null,
+          "reference_source_sid": "qa-6766dc7522973b64",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.17391304347826084,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "ccb36322",
+          "question": "What is the name of the music streaming service have I been using lately?",
+          "answer": "Spotify",
+          "final": {
+            "text": "Stored answer: Spotify",
+            "emitted_text": "Stored answer: Spotify",
+            "tokens": 5,
+            "token_ids": [
+              94343,
+              4320,
+              25,
+              41637,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19251068928,
+            "decode_seconds": 2.451758576091379
+          },
+          "query_seconds": 2.460395281203091,
+          "selected_sid": null,
+          "reference_source_sid": "qa-409ec3d94e3fb69d",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.5,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "726462e0",
+          "question": "What was the discount I got on my first purchase from the new clothing brand?",
+          "answer": "10%",
+          "final": {
+            "text": "You got a 10% discount on your first purchase from the new clothing brand.",
+            "emitted_text": "You got a 10% discount on your first purchase from the new clothing brand.",
+            "tokens": 18,
+            "token_ids": [
+              2675,
+              2751,
+              264,
+              220,
+              605,
+              4,
+              11336,
+              389,
+              701,
+              1176,
+              7782,
+              505,
+              279,
+              502,
+              17895,
+              6883,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19254738944,
+            "decode_seconds": 8.559033509809524
+          },
+          "query_seconds": 8.567638845182955,
+          "selected_sid": null,
+          "reference_source_sid": "qa-477266164f82bcac",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.13333333333333333,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        },
+        {
+          "qid": "f4f1d8a4",
+          "question": "Who gave me a new stand mixer as a birthday gift?",
+          "answer": "my sister",
+          "final": {
+            "text": "Your sister gave you a new stand mixer as a birthday gift.",
+            "emitted_text": "Your sister gave you a new stand mixer as a birthday gift.",
+            "tokens": 14,
+            "token_ids": [
+              7927,
+              13219,
+              6688,
+              499,
+              264,
+              502,
+              2559,
+              38878,
+              439,
+              264,
+              15553,
+              8352,
+              13,
+              128009
+            ],
+            "finish_reason": "eos",
+            "hit_cap": false,
+            "boundary_removed": false,
+            "max_query_cache_payload_bytes": 19252641792,
+            "decode_seconds": 6.677792648784816
+          },
+          "query_seconds": 6.686613907106221,
+          "selected_sid": null,
+          "reference_source_sid": "qa-926891d5b85d9432",
+          "retrieved_sids": [],
+          "retrieval_at1": null,
+          "retrieval_at3": null,
+          "returned_exact": false,
+          "emitted_exact": false,
+          "verbatim_exact": false,
+          "token_f1": 0.14285714285714285,
+          "contains_reference": false,
+          "hit_cap": false,
+          "eos": true,
+          "context_tokens": 73384
+        }
+      ],
+      "summary": {
+        "n": 24,
+        "returned_exact": {
+          "count": 6,
+          "rate": 0.25,
+          "ci95": [
+            0.11999366228595004,
+            0.44899444005154004
+          ]
+        },
+        "emitted_exact": {
+          "count": 6,
+          "rate": 0.25,
+          "ci95": [
+            0.11999366228595004,
+            0.44899444005154004
+          ]
+        },
+        "verbatim_exact": {
+          "count": 1,
+          "rate": 0.041666666666666664,
+          "ci95": [
+            0.0073934561655057685,
+            0.20241806478655938
+          ]
+        },
+        "contains_reference": {
+          "count": 22,
+          "rate": 0.9166666666666666,
+          "ci95": [
+            0.741511978067893,
+            0.9768411847029567
+          ]
+        },
+        "hit_cap": {
+          "count": 0,
+          "rate": 0.0,
+          "ci95": [
+            1.3877787807814457e-17,
+            0.13797620467498017
+          ]
+        },
+        "eos": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "retrieval_at1": null,
+        "retrieval_at3": null,
+        "mean_token_f1": 0.5448167502195634,
+        "mean_output_tokens": 11.041666666666666,
+        "mean_query_seconds": 5.2967699985213885,
+        "max_query_cache_payload_bytes": 19254738944
+      },
+      "resources": {
+        "elapsed_seconds": 127.1550999651663,
+        "peak_allocated_bytes": 53828127232,
+        "peak_reserved_bytes": 60966305792,
+        "end_allocated_bytes": 51383222784,
+        "persistent_payload_bytes": 19237175296,
+        "persistent_tier": "GPU reusable cache",
+        "additional_model_bytes": 0,
+        "max_decode_kv_bytes": 19254738944,
+        "preprocessing_peak_allocated_bytes": 53898278400
+      }
+    },
+    "our_delta": {
+      "trials": [
+        {
+          "qid": "c19f7a0b",
+          "question": "What time do I usually get home from work on weeknights?",
+          "answer": "6:30 pm",
+          "final": {
+            "text": "6:30 pm",
+            "emitted_text": "6:30 pm",
+            "token_ids": [
+              220,
+              21,
+              25,
+              966,
+              9012,
+              128009
+            ],
+            "tokens": 6,
+            "answer_tokens": 4,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 6291456,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6551076830364764,
+          "selected_sid": "qa-61f8b11e140a0959",
+          "reference_source_sid": "qa-61f8b11e140a0959",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "c960da58",
+          "question": "How many playlists do I have on Spotify?",
+          "answer": "20",
+          "final": {
+            "text": "20",
+            "emitted_text": "20",
+            "token_ids": [
+              220,
+              508,
+              128009
+            ],
+            "tokens": 3,
+            "answer_tokens": 1,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4194304,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.679096404928714,
+          "selected_sid": "qa-5f7b615f26178791",
+          "reference_source_sid": "qa-5f7b615f26178791",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "3b6f954b",
+          "question": "Where did I attend for my study abroad program?",
+          "answer": "University of Melbourne in Australia",
+          "final": {
+            "text": "University of Melbourne in Australia",
+            "emitted_text": "University of Melbourne in Australia",
+            "token_ids": [
+              3907,
+              315,
+              27535,
+              304,
+              8494,
+              128009
+            ],
+            "tokens": 6,
+            "answer_tokens": 5,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 5242880,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6727164490148425,
+          "selected_sid": "qa-f9b851f19b8ef12b",
+          "reference_source_sid": "qa-f9b851f19b8ef12b",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "94f70d80",
+          "question": "How long did it take me to assemble the IKEA bookshelf?",
+          "answer": "4 hours",
+          "final": {
+            "text": "4 hours",
+            "emitted_text": "4 hours",
+            "token_ids": [
+              220,
+              19,
+              4207,
+              128009
+            ],
+            "tokens": 4,
+            "answer_tokens": 2,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 5767168,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6677628587931395,
+          "selected_sid": "qa-404d8b00a0cc6356",
+          "reference_source_sid": "qa-404d8b00a0cc6356",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "dccbc061",
+          "question": "What was my previous stance on spirituality?",
+          "answer": "A staunch atheist",
+          "final": {
+            "text": "A staunch atheist",
+            "emitted_text": "A staunch atheist",
+            "token_ids": [
+              362,
+              82721,
+              67464,
+              128009
+            ],
+            "tokens": 4,
+            "answer_tokens": 3,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4194304,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6943069258704782,
+          "selected_sid": "qa-91b2ce1d83206887",
+          "reference_source_sid": "qa-91b2ce1d83206887",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "311778f1",
+          "question": "How many hours did I spend watching documentaries on Netflix last month?",
+          "answer": "10",
+          "final": {
+            "text": "10",
+            "emitted_text": "10",
+            "token_ids": [
+              220,
+              605,
+              128009
+            ],
+            "tokens": 3,
+            "answer_tokens": 1,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 5242880,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6503554601222277,
+          "selected_sid": "qa-67ce7b3893aa26db",
+          "reference_source_sid": "qa-67ce7b3893aa26db",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "b86304ba",
+          "question": "How much is the painting of a sunset worth in terms of the amount I paid for it?",
+          "answer": "The painting is worth triple what I paid for it.",
+          "final": {
+            "text": "The painting is worth triple what I paid for it.",
+            "emitted_text": "The painting is worth triple what I paid for it.",
+            "token_ids": [
+              578,
+              19354,
+              374,
+              5922,
+              24657,
+              1148,
+              358,
+              7318,
+              369,
+              433,
+              13,
+              128009
+            ],
+            "tokens": 12,
+            "answer_tokens": 11,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 9175040,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.8765559261664748,
+          "selected_sid": "qa-66f0a0646e0bbe88",
+          "reference_source_sid": "qa-66f0a0646e0bbe88",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "5d3d2817",
+          "question": "What was my previous occupation?",
+          "answer": "Marketing specialist at a small startup",
+          "final": {
+            "text": "Marketing specialist at a small startup",
+            "emitted_text": "Marketing specialist at a small startup",
+            "token_ids": [
+              18729,
+              24687,
+              520,
+              264,
+              2678,
+              21210,
+              128009
+            ],
+            "tokens": 7,
+            "answer_tokens": 6,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4456448,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.7567661758512259,
+          "selected_sid": "qa-4fbc48ccc11248f5",
+          "reference_source_sid": "qa-4fbc48ccc11248f5",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "37d43f65",
+          "question": "How much RAM did I upgrade my laptop to?",
+          "answer": "16GB",
+          "final": {
+            "text": "16GB",
+            "emitted_text": "16GB",
+            "token_ids": [
+              220,
+              845,
+              5494,
+              128009
+            ],
+            "tokens": 4,
+            "answer_tokens": 2,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4718592,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6923267929814756,
+          "selected_sid": "qa-84865ef74bd0da32",
+          "reference_source_sid": "qa-84865ef74bd0da32",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "d52b4f67",
+          "question": "Where did I attend my cousin's wedding?",
+          "answer": "The Grand Ballroom",
+          "final": {
+            "text": "The Grand Ballroom",
+            "emitted_text": "The Grand Ballroom",
+            "token_ids": [
+              578,
+              10517,
+              13131,
+              3039,
+              128009
+            ],
+            "tokens": 5,
+            "answer_tokens": 4,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4718592,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.5906372768804431,
+          "selected_sid": "qa-cc3f1b35753ebc44",
+          "reference_source_sid": "qa-cc3f1b35753ebc44",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "51a45a95",
+          "question": "Where did I redeem a $5 coupon on coffee creamer?",
+          "answer": "Target",
+          "final": {
+            "text": "Target",
+            "emitted_text": "Target",
+            "token_ids": [
+              13791,
+              128009
+            ],
+            "tokens": 2,
+            "answer_tokens": 1,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4980736,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6212446270510554,
+          "selected_sid": "qa-1799915ffb3ad52b",
+          "reference_source_sid": "qa-1799915ffb3ad52b",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "a82c026e",
+          "question": "What game did I finally beat last weekend?",
+          "answer": "Dark Souls 3 DLC",
+          "final": {
+            "text": "Dark Souls 3 DLC",
+            "emitted_text": "Dark Souls 3 DLC",
+            "token_ids": [
+              12538,
+              58770,
+              220,
+              18,
+              44019,
+              128009
+            ],
+            "tokens": 6,
+            "answer_tokens": 5,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4980736,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.7513760873116553,
+          "selected_sid": "qa-fd14cb14ca42ac1a",
+          "reference_source_sid": "qa-fd14cb14ca42ac1a",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "6b168ec8",
+          "question": "How many bikes do I own?",
+          "answer": "three",
+          "final": {
+            "text": "three",
+            "emitted_text": "three",
+            "token_ids": [
+              2380,
+              128009
+            ],
+            "tokens": 2,
+            "answer_tokens": 1,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 3407872,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6506531205959618,
+          "selected_sid": "qa-25e350e421867373",
+          "reference_source_sid": "qa-25e350e421867373",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "86f00804",
+          "question": "What book am I currently reading?",
+          "answer": "The Seven Husbands of Evelyn Hugo",
+          "final": {
+            "text": "The Seven Husbands of Evelyn Hugo",
+            "emitted_text": "The Seven Husbands of Evelyn Hugo",
+            "token_ids": [
+              578,
+              31048,
+              473,
+              25337,
+              2914,
+              315,
+              96425,
+              52194,
+              128009
+            ],
+            "tokens": 9,
+            "answer_tokens": 8,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 5242880,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.8084543435834348,
+          "selected_sid": "qa-1df82c342823c8d0",
+          "reference_source_sid": "qa-1df82c342823c8d0",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "60d45044",
+          "question": "What type of rice is my favorite?",
+          "answer": "Japanese short-grain rice",
+          "final": {
+            "text": "Japanese short-grain rice",
+            "emitted_text": "Japanese short-grain rice",
+            "token_ids": [
+              11002,
+              2875,
+              25313,
+              467,
+              20228,
+              128009
+            ],
+            "tokens": 6,
+            "answer_tokens": 5,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4718592,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.7182034766301513,
+          "selected_sid": "qa-5b7092482701c35d",
+          "reference_source_sid": "qa-5b7092482701c35d",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "7527f7e2",
+          "question": "How much did I spend on a designer handbag?",
+          "answer": "$800",
+          "final": {
+            "text": "$800",
+            "emitted_text": "$800",
+            "token_ids": [
+              400,
+              4728,
+              128009
+            ],
+            "tokens": 3,
+            "answer_tokens": 2,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4718592,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6435965341515839,
+          "selected_sid": "qa-4d000dc7b3195dbb",
+          "reference_source_sid": "qa-4d000dc7b3195dbb",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "8a137a7f",
+          "question": "What type of bulb did I replace in my bedside lamp?",
+          "answer": "Philips LED bulb",
+          "final": {
+            "text": "Philips LED bulb",
+            "emitted_text": "Philips LED bulb",
+            "token_ids": [
+              74603,
+              13414,
+              46912,
+              128009
+            ],
+            "tokens": 4,
+            "answer_tokens": 4,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 5242880,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.5865685041062534,
+          "selected_sid": "qa-5e4d2d4ee16f9c20",
+          "reference_source_sid": "qa-5e4d2d4ee16f9c20",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "8e9d538c",
+          "question": "How many skeins of worsted weight yarn did I find in my stash?",
+          "answer": "17",
+          "final": {
+            "text": "17",
+            "emitted_text": "17",
+            "token_ids": [
+              220,
+              1114,
+              128009
+            ],
+            "tokens": 3,
+            "answer_tokens": 1,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 6029312,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6349518122151494,
+          "selected_sid": "qa-d2f6cbdf4e47f77b",
+          "reference_source_sid": "qa-d2f6cbdf4e47f77b",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "58bf7951",
+          "question": "What play did I attend at the local community theater?",
+          "answer": "The Glass Menagerie",
+          "final": {
+            "text": "The Glass Menagerie",
+            "emitted_text": "The Glass Menagerie",
+            "token_ids": [
+              578,
+              21396,
+              11258,
+              1435,
+              648,
+              128009
+            ],
+            "tokens": 6,
+            "answer_tokens": 5,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 5505024,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6425645081326365,
+          "selected_sid": "qa-06daf8e2d3ec5ba6",
+          "reference_source_sid": "qa-06daf8e2d3ec5ba6",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "19b5f2b3",
+          "question": "How long was I in Japan for?",
+          "answer": "two weeks",
+          "final": {
+            "text": "two weeks",
+            "emitted_text": "two weeks",
+            "token_ids": [
+              1403,
+              5672,
+              128009
+            ],
+            "tokens": 3,
+            "answer_tokens": 2,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 3932160,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6384169878438115,
+          "selected_sid": "qa-e9b6d2c6c5fb4b0c",
+          "reference_source_sid": "qa-e9b6d2c6c5fb4b0c",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "75499fd8",
+          "question": "What breed is my dog?",
+          "answer": "Golden Retriever",
+          "final": {
+            "text": "Golden Retriever",
+            "emitted_text": "Golden Retriever",
+            "token_ids": [
+              18288,
+              10608,
+              462,
+              2099,
+              128009
+            ],
+            "tokens": 5,
+            "answer_tokens": 4,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 3932160,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.7553603029809892,
+          "selected_sid": "qa-6766dc7522973b64",
+          "reference_source_sid": "qa-6766dc7522973b64",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "ccb36322",
+          "question": "What is the name of the music streaming service have I been using lately?",
+          "answer": "Spotify",
+          "final": {
+            "text": "Spotify",
+            "emitted_text": "Spotify",
+            "token_ids": [
+              41637,
+              128009
+            ],
+            "tokens": 2,
+            "answer_tokens": 2,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 5505024,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6615506350062788,
+          "selected_sid": "qa-409ec3d94e3fb69d",
+          "reference_source_sid": "qa-409ec3d94e3fb69d",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "726462e0",
+          "question": "What was the discount I got on my first purchase from the new clothing brand?",
+          "answer": "10%",
+          "final": {
+            "text": "10%",
+            "emitted_text": "10%",
+            "token_ids": [
+              220,
+              605,
+              4,
+              128009
+            ],
+            "tokens": 4,
+            "answer_tokens": 2,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 6291456,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.6886271517723799,
+          "selected_sid": "qa-477266164f82bcac",
+          "reference_source_sid": "qa-477266164f82bcac",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        },
+        {
+          "qid": "f4f1d8a4",
+          "question": "Who gave me a new stand mixer as a birthday gift?",
+          "answer": "my sister",
+          "final": {
+            "text": "my sister",
+            "emitted_text": "my sister",
+            "token_ids": [
+              856,
+              13219,
+              128009
+            ],
+            "tokens": 3,
+            "answer_tokens": 2,
+            "finish_reason": "eos",
+            "boundary_removed": false,
+            "hit_cap": false,
+            "stop_at_turn": true,
+            "max_query_cache_payload_bytes": 4980736,
+            "cache_measurement": "Exact model-config formula; own generation API does not return its cache"
+          },
+          "query_seconds": 0.7044247477315366,
+          "selected_sid": "qa-926891d5b85d9432",
+          "reference_source_sid": "qa-926891d5b85d9432",
+          "retrieved_sids": [],
+          "retrieval_at1": true,
+          "retrieval_at3": true,
+          "returned_exact": true,
+          "emitted_exact": true,
+          "verbatim_exact": true,
+          "token_f1": 1.0,
+          "contains_reference": true,
+          "hit_cap": false,
+          "eos": true,
+          "rank": 1,
+          "routing_correct": true
+        }
+      ],
+      "summary": {
+        "n": 24,
+        "returned_exact": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "emitted_exact": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "verbatim_exact": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "contains_reference": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "hit_cap": {
+          "count": 0,
+          "rate": 0.0,
+          "ci95": [
+            1.3877787807814457e-17,
+            0.13797620467498017
+          ]
+        },
+        "eos": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "retrieval_at1": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "retrieval_at3": {
+          "count": 24,
+          "rate": 1.0,
+          "ci95": [
+            0.8620237953250198,
+            1
+          ]
+        },
+        "mean_token_f1": 1.0,
+        "mean_output_tokens": 4.666666666666667,
+        "mean_query_seconds": 0.6850676996982656,
+        "max_query_cache_payload_bytes": 9175040
+      },
+      "resources": {
+        "elapsed_seconds": 27.843421279918402,
+        "peak_allocated_bytes": 33310857216,
+        "peak_reserved_bytes": 33330036736,
+        "end_allocated_bytes": 32129565184,
+        "persistent_payload_bytes": 16911471768,
+        "persistent_tier": "Disk delta files; one loaded at a time",
+        "additional_model_bytes": 0,
+        "max_decode_kv_bytes": 9175040,
+        "routing_seconds": 11.375805280171335,
+        "cpu_base_backup_bytes": 704643072,
+        "write_cost_scope": "Existing writes reused; historical write+immediate-check cost is not part of inference peak"
+      }
+    }
+  },
+  "matched_methods": [
+    "our_delta",
+    "rag_qa",
+    "kv_full_qa"
+  ],
+  "secondary": "rag_context_only",
+  "scope": "Exploratory same24previously inspected original-question items; not unseen-query or generalization accuracy"
+}

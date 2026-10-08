@@ -1,0 +1,86 @@
+{
+  "elapsed_seconds": 482.9552474860102,
+  "base_model_parameter_bytes": 32121044992,
+  "embedding_parameter_bytes": 90852864,
+  "methods": {
+    "llama_loading": {
+      "elapsed_seconds": 11.864985932130367,
+      "peak_allocated_bytes": 32121045504,
+      "peak_reserved_bytes": 32122077184,
+      "end_allocated_bytes": 32121045504,
+      "base_parameter_bytes": 32121044992
+    },
+    "rag_index_creation": {
+      "elapsed_seconds": 1.134427323937416,
+      "peak_allocated_bytes": 32341717504,
+      "peak_reserved_bytes": 32440844288,
+      "end_allocated_bytes": 32220426240,
+      "embedding_parameter_bytes": 90852864,
+      "qa_vectors": 24,
+      "context_vectors": 623
+    },
+    "rag_qa": {
+      "elapsed_seconds": 86.04913973994553,
+      "peak_allocated_bytes": 33615307776,
+      "peak_reserved_bytes": 34938552320,
+      "end_allocated_bytes": 32220426240,
+      "persistent_payload_bytes": 388484,
+      "persistent_tier": "CPU text/index files",
+      "additional_model_bytes": 90852864,
+      "max_decode_kv_bytes": 1224998912,
+      "storage_files": [
+        "bank.json",
+        "qa_embeddings.pt"
+      ]
+    },
+    "rag_context_only": {
+      "elapsed_seconds": 18.8032411262393,
+      "peak_allocated_bytes": 32452498944,
+      "peak_reserved_bytes": 32623296512,
+      "end_allocated_bytes": 32220426240,
+      "persistent_payload_bytes": 1394472,
+      "persistent_tier": "CPU text/index files",
+      "additional_model_bytes": 90852864,
+      "max_decode_kv_bytes": 193986560,
+      "storage_files": [
+        "context_chunks.json",
+        "context_embeddings.pt"
+      ]
+    },
+    "kv_full_qa_build": {
+      "elapsed_seconds": 197.0450290562585,
+      "peak_allocated_bytes": 53898278400,
+      "peak_reserved_bytes": 84410368000,
+      "end_allocated_bytes": 51366740480,
+      "persistent_payload_bytes": 19237175296,
+      "prefix_tokens": 73384,
+      "expected_payload_bytes": 19237175296
+    },
+    "kv_full_qa": {
+      "elapsed_seconds": 127.1550999651663,
+      "peak_allocated_bytes": 53828127232,
+      "peak_reserved_bytes": 60966305792,
+      "end_allocated_bytes": 51383222784,
+      "persistent_payload_bytes": 19237175296,
+      "persistent_tier": "GPU reusable cache",
+      "additional_model_bytes": 0,
+      "max_decode_kv_bytes": 19254738944,
+      "preprocessing_peak_allocated_bytes": 53898278400
+    },
+    "our_delta": {
+      "elapsed_seconds": 27.843421279918402,
+      "peak_allocated_bytes": 33310857216,
+      "peak_reserved_bytes": 33330036736,
+      "end_allocated_bytes": 32129565184,
+      "persistent_payload_bytes": 16911471768,
+      "persistent_tier": "Disk delta files; one loaded at a time",
+      "additional_model_bytes": 0,
+      "max_decode_kv_bytes": 9175040,
+      "routing_seconds": 11.375805280171335,
+      "cpu_base_backup_bytes": 704643072,
+      "write_cost_scope": "Existing writes reused; historical write+immediate-check cost is not part of inference peak"
+    }
+  },
+  "measurement_scope": "Inference/prefill/index creation only; no new AlphaEdit writes; all methods float32, same Llama, batch1",
+  "peak_definitions": "PyTorch max_memory_allocated is live tensors; max_memory_reserved is allocator blocks. Bank payload bytes are separate and stored in different tiers."
+}

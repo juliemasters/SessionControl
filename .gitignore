@@ -7,8 +7,15 @@ models/
 checkpoints/
 session_deltas/
 session_memory/
-results/
-data/
+/results/
+/runs/
+/data/*
+!/data/zsre-routing-pilot/
+/data/zsre-routing-pilot/*
+!/data/zsre-routing-pilot/hparams-layer7.json
+cache/
+.cache/
+wandb/
 *.pt
 *.pth
 *.safetensors

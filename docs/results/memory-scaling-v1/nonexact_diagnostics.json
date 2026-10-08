@@ -1,0 +1,79 @@
+{
+  "evaluation_sha256": "79ab299dd8d5c36c9075cf1a8be8fcff15d1edf8523ce005014505055be7db5f",
+  "historical_writes_sha256": "4962fe2c02fbde9baaa293fe3210ff2b0d0e81bada9fe104865c31aaee6acc5c",
+  "note": "Write-time checks diagnose independent own-delta recall. Historical checks were not regenerated in this run. Nonexact does not necessarily mean a factual error.",
+  "cases": [
+    {
+      "qid": "6f9b354f",
+      "question": "What color did I repaint my bedroom walls?",
+      "reference": "a lighter shade of gray",
+      "selected_answer": "I repainted them a soft gray.",
+      "correct_delta_selected": true,
+      "correct_delta_rank": 1,
+      "own_immediate_answer": "I repainted them a soft gray.",
+      "own_immediate_exact": false,
+      "immediate_check_origin": "New write-time check",
+      "post_hoc_review": "Partial wording/detail: gray is conveyed, but lighter shade is not explicit."
+    },
+    {
+      "qid": "3d86fd0a",
+      "question": "Where did I meet Sophia?",
+      "reference": "a coffee shop in the city",
+      "selected_answer": "You met Sophia at the coffee shop.",
+      "correct_delta_selected": true,
+      "correct_delta_rank": 1,
+      "own_immediate_answer": "You met Sophia at the coffee shop.",
+      "own_immediate_exact": false,
+      "immediate_check_origin": "New write-time check",
+      "post_hoc_review": "Partial detail: coffee shop is conveyed, but in the city is omitted."
+    },
+    {
+      "qid": "15745da0",
+      "question": "How long have I been collecting vintage cameras?",
+      "reference": "three months",
+      "selected_answer": "I started collecting vintage cameras in 2006.",
+      "correct_delta_selected": true,
+      "correct_delta_rank": 1,
+      "own_immediate_answer": "I started collecting vintage cameras in 2006.",
+      "own_immediate_exact": false,
+      "immediate_check_origin": "New write-time check",
+      "post_hoc_review": "Wrong information: supplies a start year instead of the reference duration of three months."
+    },
+    {
+      "qid": "f8c5f88b",
+      "question": "Where did I buy my new tennis racket from?",
+      "reference": "the sports store downtown",
+      "selected_answer": "I'm not sure. I think it was from a sports store downtown.",
+      "correct_delta_selected": true,
+      "correct_delta_rank": 1,
+      "own_immediate_answer": "I'm not sure. I think it was from a sports store downtown.",
+      "own_immediate_exact": false,
+      "immediate_check_origin": "Historical write-time check",
+      "post_hoc_review": "Reference location conveyed with uncertainty/hedging rather than the exact short answer."
+    },
+    {
+      "qid": "1e043500",
+      "question": "What is the name of the playlist I created on Spotify?",
+      "reference": "Summer Vibes",
+      "selected_answer": "Unfortunately, I'm a large language model, I don't have the ability to access your personal Spotify account or see the playlists you've created. However, I can guide you on how to find the name of your playlist on Spotify.\n\nTo find the name of your playlist on Spotify:\n\n1. Open the Spotify app on",
+      "correct_delta_selected": true,
+      "correct_delta_rank": 1,
+      "own_immediate_answer": "Unfortunately, I'm a large language model, I don't have the ability to access your personal Spotify account or see the playlists you've created. However, I can guide you on how to find the name of your playlist on Spotify.\n\nTo find the name of your playlist on Spotify:\n\n1. Open the Spotify app on",
+      "own_immediate_exact": false,
+      "immediate_check_origin": "New write-time check",
+      "post_hoc_review": "Missing answer: gives a generic inability-to-access-Spotify response and reaches the token cap instead of naming Summer Vibes."
+    },
+    {
+      "qid": "8550ddae",
+      "question": "What type of cocktail recipe did I try last weekend?",
+      "reference": "lavender gin fizz",
+      "selected_answer": "You tried a classic gin fizz.",
+      "correct_delta_selected": true,
+      "correct_delta_rank": 1,
+      "own_immediate_answer": "You tried a classic gin fizz.",
+      "own_immediate_exact": false,
+      "immediate_check_origin": "New write-time check",
+      "post_hoc_review": "Wrong subtype: classic gin fizz replaces the reference lavender gin fizz."
+    }
+  ]
+}

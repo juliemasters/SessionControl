@@ -1,0 +1,6 @@
+RESULTS_DIR: "runs"
+DATA_DIR: "data"
+STATS_DIR: "runs/cache/stats"
+KV_DIR: "runs/cache/kvs"
+HPARAMS_DIR: "config"
+REMOTE_ROOT_URL: "https://memit.baulab.info"

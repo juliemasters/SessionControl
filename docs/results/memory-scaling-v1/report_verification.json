@@ -1,0 +1,16 @@
+{
+  "completed": true,
+  "evaluation_sha256": "79ab299dd8d5c36c9075cf1a8be8fcff15d1edf8523ce005014505055be7db5f",
+  "report_sha256": "517a909a4e4d8c1f7cc66194ff65f04fb1b5c299a7024d974ac1cbd21f164741",
+  "previous24_outputs_reproduced": {
+    "our_delta": true,
+    "rag_qa": true,
+    "kv_full_qa": true
+  },
+  "figures": [
+    "accuracy_scaling",
+    "memory_scaling",
+    "kv_capacity",
+    "context_rag_scaling"
+  ]
+}

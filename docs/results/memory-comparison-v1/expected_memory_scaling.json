@@ -1,0 +1,34 @@
+[
+  {
+    "sessions": 1,
+    "kv_prefix_tokens": 3335,
+    "expected_kv_bytes": 874250240,
+    "expected_dense_delta_bytes": 704644657,
+    "expected_rag_payload_bytes": 15274,
+    "note": "Expected payload from actual encoded bank/config; only K24has measured answer accuracy"
+  },
+  {
+    "sessions": 8,
+    "kv_prefix_tokens": 23831,
+    "expected_kv_bytes": 6247153664,
+    "expected_dense_delta_bytes": 5637157256,
+    "expected_rag_payload_bytes": 123405,
+    "note": "Expected payload from actual encoded bank/config; only K24has measured answer accuracy"
+  },
+  {
+    "sessions": 16,
+    "kv_prefix_tokens": 48617,
+    "expected_kv_bytes": 12744654848,
+    "expected_dense_delta_bytes": 11274314512,
+    "expected_rag_payload_bytes": 257098,
+    "note": "Expected payload from actual encoded bank/config; only K24has measured answer accuracy"
+  },
+  {
+    "sessions": 24,
+    "kv_prefix_tokens": 73384,
+    "expected_kv_bytes": 19237175296,
+    "expected_dense_delta_bytes": 16911471768,
+    "expected_rag_payload_bytes": 387274,
+    "note": "Expected payload from actual encoded bank/config; only K24has measured answer accuracy"
+  }
+]

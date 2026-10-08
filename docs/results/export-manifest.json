@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "source": "Completed historical GPU1 experiment; no new model run performed during packaging",
+  "normalization": "Local absolute experiment-root paths replaced by <experiment-root>, temporary projector path by <projector>, and GPU UUID by <physical-gpu-1>. Original SHA256 values in provenance/completion/report verification are historical and are not rewritten. Verify released copies with released_sha256 below. Graph image bytes are unchanged.",
+  "files": [
+    {
+      "path": "docs/results/memory-comparison-v1/report.html",
+      "original_sha256": "e4895c254973ebba8127aa4dd0eca1b1ad063ea0c17bfa20d03cc35b69860401",
+      "released_sha256": "29f82fa1c8353b095812a838a6d8e7d15ded674932b2db6dea810c1750a4211e",
+      "bytes": 929684,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/evaluation.json",
+      "original_sha256": "aff08aeb8e489521c1a4602bd322b3fb370e2af8763c11c4f912a43b0046b126",
+      "released_sha256": "aff08aeb8e489521c1a4602bd322b3fb370e2af8763c11c4f912a43b0046b126",
+      "bytes": 136733,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/measurements.json",
+      "original_sha256": "9d92e171801c33e9a66e2c8606991001a23b33753856b80969d5b43658de890e",
+      "released_sha256": "9d92e171801c33e9a66e2c8606991001a23b33753856b80969d5b43658de890e",
+      "bytes": 2660,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/resource_summary.json",
+      "original_sha256": "533287c88e4ba68de90170e2932beb05f4f6bad3a626323695bca2f2fae8a4f1",
+      "released_sha256": "533287c88e4ba68de90170e2932beb05f4f6bad3a626323695bca2f2fae8a4f1",
+      "bytes": 3264,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/design.json",
+      "original_sha256": "6cb094c0015250ca93ad499068633e470b7c733b26cc1f909482d40312946fd4",
+      "released_sha256": "e728f9e5e2d29b6678eed4cad1e9fea212045d5f510e38c0e3e9cc6e5fb40d4d",
+      "bytes": 3110,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/completion.json",
+      "original_sha256": "f368afd2df1593604426dd14ea237cb7dc45e8a56e8efe530f0d39ffea8e831d",
+      "released_sha256": "dad8a80dd64758912a430d850473fb2775e5181dc45287a2532d409fa6148ef3",
+      "bytes": 2958,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/provenance.json",
+      "original_sha256": "1f9d0a818512c02e84f81ed76c0596fd48abb7ca2a8e18e448fd7f4ff8633882",
+      "released_sha256": "303ee61e64ee934e093a35a22aa68f6e0eae583be728cb51cd5a1be67b857e10",
+      "bytes": 1444,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/answer_content_review.json",
+      "original_sha256": "91e0bf4d4786e594fb031ee819be53fbb7ac493988c2b0710878e456323f8cb7",
+      "released_sha256": "91e0bf4d4786e594fb031ee819be53fbb7ac493988c2b0710878e456323f8cb7",
+      "bytes": 16633,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/expected_memory_scaling.json",
+      "original_sha256": "8e8cc1895e3d1c30918b178eb354ab129d3f627f16e095e38975bb0ba6e7d348",
+      "released_sha256": "8e8cc1895e3d1c30918b178eb354ab129d3f627f16e095e38975bb0ba6e7d348",
+      "bytes": 1144,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/kv_plan.json",
+      "original_sha256": "ec383b500b450bdec5da66cebec72237965b3d93d1544d89018899c0a6b6aeb1",
+      "released_sha256": "ec383b500b450bdec5da66cebec72237965b3d93d1544d89018899c0a6b6aeb1",
+      "bytes": 123,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/accuracy_matched.png",
+      "original_sha256": "6fe83d0fbfe82ec4db727bdbf34316d21b06e11bbcef8dd9d439d353053d80b5",
+      "released_sha256": "6fe83d0fbfe82ec4db727bdbf34316d21b06e11bbcef8dd9d439d353053d80b5",
+      "bytes": 186553,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/accuracy_matched.svg",
+      "original_sha256": "33cee61ca129865b9d0d1c5d3b2e8ca75f819e3ad7e234c7056c9f79f029528b",
+      "released_sha256": "33cee61ca129865b9d0d1c5d3b2e8ca75f819e3ad7e234c7056c9f79f029528b",
+      "bytes": 147780,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/answer_content_review.png",
+      "original_sha256": "4d4d52de3b852b493ac6a595fec015b98285f5a182d41bfad937c01451f3b313",
+      "released_sha256": "4d4d52de3b852b493ac6a595fec015b98285f5a182d41bfad937c01451f3b313",
+      "bytes": 95711,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/answer_content_review.svg",
+      "original_sha256": "0cd5e78308bb244b2dce3b78d4c64899e53b6df2e6250c85b07051d2478469d3",
+      "released_sha256": "0cd5e78308bb244b2dce3b78d4c64899e53b6df2e6250c85b07051d2478469d3",
+      "bytes": 68333,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/cache_and_scaling.png",
+      "original_sha256": "af62ec765b8e1359c006dfa0073e4b2e5405a67c7871116e6c77cadc9c248c03",
+      "released_sha256": "af62ec765b8e1359c006dfa0073e4b2e5405a67c7871116e6c77cadc9c248c03",
+      "bytes": 166876,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/cache_and_scaling.svg",
+      "original_sha256": "92b45f968fbea5e9a524f783726e9309ed8144ae284e858b7025fbec1420c3d0",
+      "released_sha256": "92b45f968fbea5e9a524f783726e9309ed8144ae284e858b7025fbec1420c3d0",
+      "bytes": 107297,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/memory_matched.png",
+      "original_sha256": "407027f555cd04f00ccff9ccdcbdd3b31b565fbfa526415da7367219e351ef65",
+      "released_sha256": "407027f555cd04f00ccff9ccdcbdd3b31b565fbfa526415da7367219e351ef65",
+      "bytes": 147604,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/memory_matched.svg",
+      "original_sha256": "ca3d94876b6da264bb75e1d17b055dd66707a71201ce9d8d1fcfbfbacb9c0168",
+      "released_sha256": "ca3d94876b6da264bb75e1d17b055dd66707a71201ce9d8d1fcfbfbacb9c0168",
+      "bytes": 104878,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/rag_context_only.png",
+      "original_sha256": "f424c258e66bcf97a5fd787ecb1dd8e26a2698ce549d0023bdc55322e4f3dd04",
+      "released_sha256": "f424c258e66bcf97a5fd787ecb1dd8e26a2698ce549d0023bdc55322e4f3dd04",
+      "bytes": 55746,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-comparison-v1/rag_context_only.svg",
+      "original_sha256": "aeea745e7f1102fabd01a6832698a997c62f08933da8f64dd92e8d57930b713f",
+      "released_sha256": "aeea745e7f1102fabd01a6832698a997c62f08933da8f64dd92e8d57930b713f",
+      "bytes": 44400,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/report.html",
+      "original_sha256": "517a909a4e4d8c1f7cc66194ff65f04fb1b5c299a7024d974ac1cbd21f164741",
+      "released_sha256": "662c971c02a566a9b64cf8b29b97c82eee4076c7ff2a67bb107a593a547ac9a2",
+      "bytes": 988332,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/evaluation.json",
+      "original_sha256": "79ab299dd8d5c36c9075cf1a8be8fcff15d1edf8523ce005014505055be7db5f",
+      "released_sha256": "79ab299dd8d5c36c9075cf1a8be8fcff15d1edf8523ce005014505055be7db5f",
+      "bytes": 948317,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/measurements.json",
+      "original_sha256": "fd288a8103cb7f195ba3da3188b086c76ee6dc904eeff6cab6f41e884c87d385",
+      "released_sha256": "fd288a8103cb7f195ba3da3188b086c76ee6dc904eeff6cab6f41e884c87d385",
+      "bytes": 6370,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/resource_summary.json",
+      "original_sha256": "5891d7c5d155b48d7d805d8030cf96711ad2a1c7d8966c1e6c59ac3bd9e6008e",
+      "released_sha256": "5891d7c5d155b48d7d805d8030cf96711ad2a1c7d8966c1e6c59ac3bd9e6008e",
+      "bytes": 7099,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/design.json",
+      "original_sha256": "bb4486c76808350a8378f9a3791112784bcdd0bab76ef5c7af8934649b2e8dfb",
+      "released_sha256": "79bf8394c8c7a269f666f02e82f47e8e07277e97d5ee46875a07e15a3ed62563",
+      "bytes": 5683,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/completion.json",
+      "original_sha256": "61d04e44dd03df79e7d3f38b396b3a9b30417763ceb131005fe5da546589c65b",
+      "released_sha256": "d6da34f6e8d971efd155fde6bf4c4bba3e77ab69dea45224b73a562247290557",
+      "bytes": 6783,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/provenance.json",
+      "original_sha256": "69b71310d3f76b5cc74d87320d379836b4ab57e3bf183771cefe986739659f7b",
+      "released_sha256": "2a33c681bfb0d60924db07fbafa16391de58a39aa92af3232d48a3c558666d2a",
+      "bytes": 5049,
+      "normalized": true
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/nonexact_diagnostics.json",
+      "original_sha256": "375a220ed0bfb0935371bb5e9a869a919f79b559a45ce12bb593677a34089f3d",
+      "released_sha256": "375a220ed0bfb0935371bb5e9a869a919f79b559a45ce12bb593677a34089f3d",
+      "bytes": 4289,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/report_verification.json",
+      "original_sha256": "ae340a76c09c7771b510325bb39609c6683124bae57fabddc393fd808f4c76e9",
+      "released_sha256": "ae340a76c09c7771b510325bb39609c6683124bae57fabddc393fd808f4c76e9",
+      "bytes": 420,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/accuracy_scaling.png",
+      "original_sha256": "1f5a4da6bf700e3e7606b3af55662d38c4c7768d7e66a28bcde2e05e7fcab653",
+      "released_sha256": "1f5a4da6bf700e3e7606b3af55662d38c4c7768d7e66a28bcde2e05e7fcab653",
+      "bytes": 214365,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/accuracy_scaling.svg",
+      "original_sha256": "9dc4092eed7acc818a14a41a893950edb2e7651a59a4931b69cd28a1cd122fbd",
+      "released_sha256": "9dc4092eed7acc818a14a41a893950edb2e7651a59a4931b69cd28a1cd122fbd",
+      "bytes": 160404,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/context_rag_scaling.png",
+      "original_sha256": "88e00466fe09594b825453bc99ae12b39c7116181fc47498cbec5bcef9d323d3",
+      "released_sha256": "88e00466fe09594b825453bc99ae12b39c7116181fc47498cbec5bcef9d323d3",
+      "bytes": 134771,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/context_rag_scaling.svg",
+      "original_sha256": "bc64f119bfa793eb2887792fc645ebf59b66f108d8ba5808a8b2a0d4ee7fa16c",
+      "released_sha256": "bc64f119bfa793eb2887792fc645ebf59b66f108d8ba5808a8b2a0d4ee7fa16c",
+      "bytes": 76970,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/kv_capacity.png",
+      "original_sha256": "cc5a98e27ca1e92e085997100d7932d9143f5ff1ad88093bca00e34d16d228a4",
+      "released_sha256": "cc5a98e27ca1e92e085997100d7932d9143f5ff1ad88093bca00e34d16d228a4",
+      "bytes": 138906,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/kv_capacity.svg",
+      "original_sha256": "8ac7d083738d6e5c517f427956d695d7384adf1c660ad9220db864c3799d271f",
+      "released_sha256": "8ac7d083738d6e5c517f427956d695d7384adf1c660ad9220db864c3799d271f",
+      "bytes": 88323,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/memory_scaling.png",
+      "original_sha256": "816a19dfd816483eb9c3a82a033feb17e13c39d7e33df9a392c0f1050df43bc7",
+      "released_sha256": "816a19dfd816483eb9c3a82a033feb17e13c39d7e33df9a392c0f1050df43bc7",
+      "bytes": 191181,
+      "normalized": false
+    },
+    {
+      "path": "docs/results/memory-scaling-v1/memory_scaling.svg",
+      "original_sha256": "d609bc928ca35d4c9d8987ac39325743f9e581e3b3272c727ba0a5e0d08e3ccc",
+      "released_sha256": "d609bc928ca35d4c9d8987ac39325743f9e581e3b3272c727ba0a5e0d08e3ccc",
+      "bytes": 119447,
+      "normalized": false
+    }
+  ]
+}

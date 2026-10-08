@@ -1,0 +1,447 @@
+{
+  "evaluation_sha256": "aff08aeb8e489521c1a4602bd322b3fb370e2af8763c11c4f912a43b0046b126",
+  "reviewer": "Codex, single unblinded model review; no independent human adjudicator",
+  "timing": "Post hoc; criterion added after inspection of the baseline outputs; exploratory",
+  "criterion": "Requested reference fact is correctly conveyed with no explicit contradiction to that fact. Harmless wording, articles, and person changes pass. Naming the reference while denying knowledge of it fails.",
+  "limits": "Does not establish truth of every additional statement. No model was trained or selected using this review. This is not a preregistered or independent semantic accuracy evaluation.",
+  "methods": {
+    "our_delta": [
+      {
+        "qid": "c19f7a0b",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "c960da58",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "3b6f954b",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "94f70d80",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "dccbc061",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "311778f1",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "b86304ba",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "5d3d2817",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "37d43f65",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "d52b4f67",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "51a45a95",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "a82c026e",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "6b168ec8",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "86f00804",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "60d45044",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "7527f7e2",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "8a137a7f",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "8e9d538c",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "58bf7951",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "19b5f2b3",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "75499fd8",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "ccb36322",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "726462e0",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "f4f1d8a4",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      }
+    ],
+    "rag_qa": [
+      {
+        "qid": "c19f7a0b",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "c960da58",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "3b6f954b",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "94f70d80",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "dccbc061",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "311778f1",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "b86304ba",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "5d3d2817",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "37d43f65",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "d52b4f67",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "51a45a95",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "a82c026e",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "6b168ec8",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "86f00804",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "60d45044",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "7527f7e2",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "8a137a7f",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "8e9d538c",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "58bf7951",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "19b5f2b3",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "75499fd8",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "ccb36322",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "726462e0",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      },
+      {
+        "qid": "f4f1d8a4",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Matches the reference under case/punctuation normalization."
+      }
+    ],
+    "kv_full_qa": [
+      {
+        "qid": "c19f7a0b",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same time, 6:30 pm, expressed in a sentence."
+      },
+      {
+        "qid": "c960da58",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same count, 20 playlists."
+      },
+      {
+        "qid": "3b6f954b",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same university and country."
+      },
+      {
+        "qid": "94f70d80",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same duration, 4 hours."
+      },
+      {
+        "qid": "dccbc061",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same belief, staunch atheist; article changed."
+      },
+      {
+        "qid": "311778f1",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same count, 10 hours."
+      },
+      {
+        "qid": "b86304ba",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same value relationship, triple the purchase price; first person changed to second person."
+      },
+      {
+        "qid": "5d3d2817",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same occupation and employer type."
+      },
+      {
+        "qid": "37d43f65",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same RAM quantity, 16GB."
+      },
+      {
+        "qid": "d52b4f67",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Same venue."
+      },
+      {
+        "qid": "51a45a95",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Same store."
+      },
+      {
+        "qid": "a82c026e",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Same game DLC."
+      },
+      {
+        "qid": "6b168ec8",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same number of bikes, three."
+      },
+      {
+        "qid": "86f00804",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Same book title."
+      },
+      {
+        "qid": "60d45044",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Same rice type."
+      },
+      {
+        "qid": "7527f7e2",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same amount, $800."
+      },
+      {
+        "qid": "8a137a7f",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same bulb brand and type."
+      },
+      {
+        "qid": "8e9d538c",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same count, 17 skeins."
+      },
+      {
+        "qid": "58bf7951",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "normalized_exact",
+        "reason": "Same play title."
+      },
+      {
+        "qid": "19b5f2b3",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same duration, two weeks."
+      },
+      {
+        "qid": "75499fd8",
+        "reference_fact_correct_without_contradiction": false,
+        "category": "contradictory",
+        "reason": "Names Golden Retriever but explicitly denies having information about the breed in the preceding sentence; contradictory response fails criterion."
+      },
+      {
+        "qid": "ccb36322",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same service, Spotify; adds a label."
+      },
+      {
+        "qid": "726462e0",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same discount, 10%."
+      },
+      {
+        "qid": "f4f1d8a4",
+        "reference_fact_correct_without_contradiction": true,
+        "category": "faithful_wording_difference",
+        "reason": "Same giver, the user's sister; first person changed to second person."
+      }
+    ]
+  }
+}

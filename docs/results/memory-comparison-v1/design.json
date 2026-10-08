@@ -1,0 +1,49 @@
+{
+  "source": "<experiment-root>/results/answer-termination-exact-v1",
+  "physical_gpu": 1,
+  "seed": 0,
+  "dtype": "float32",
+  "batch_size": 1,
+  "question_count": 24,
+  "model": "<experiment-root>/models/Llama-3.1-8B-Instruct",
+  "embedding_model": "<experiment-root>/models/all-MiniLM-L6-v2",
+  "delta_root": "<experiment-root>/results/answer-termination-exact-v1/deltas",
+  "layers": [
+    13,
+    14,
+    15
+  ],
+  "source_hashes": {
+    "items.json": "d7fe9f220cfb4aa658c40433ce1a840200eb81e3b9bfb62cf5ae481f40ad792e",
+    "design.json": "7ec2a677fc7058e78aa7da79989638f12638ab709078fd50409221d7646af507",
+    "evaluation.json": "cca27c4dbba6328aa0c3ee9c5ffc2873d11fd1254f20df616b4108a6768a6d3d",
+    "completion.json": "68bf5f03919f5e46d7247b05bbfec86163501f9cca2f85205085f3b253745249"
+  },
+  "methods": [
+    "our_delta",
+    "rag_qa",
+    "kv_full_qa",
+    "rag_context_only"
+  ],
+  "matched_information": "Primary3methods receive full source sessions and supplied Q/A at memory creation; recall only uses original question",
+  "kv": "Uncompressed float32 reusable full-bank prefix; all24records; no oracle session selection; crop query tail between recalls",
+  "rag": "MiniLM mean-pooled normalized embeddings of supplied original question keys; top1 full session+QA record; base Llama generates answer",
+  "rag_secondary": "Context-only dense retrieval across all user+assistant turn chunks;192wordpieces,32overlap; top3chunks; no stored questions or answers",
+  "own": "Reuse verified independent answer-plus-EOS dense deltas; fresh normalized activation scores and24single-question finals",
+  "generation": "Greedy,64token cap, per-answer next-turn stopping; baselines chat prompt; own bare original write key",
+  "retrieval_labels": "Source IDs and references are evaluation-only; ranking uses vector cosine and query text",
+  "cache_prefill_chunk": 256,
+  "no_truncation": true,
+  "test_scope": "Exploratory same24previously inspected original-question items; not unseen-query or generalization accuracy",
+  "accuracy": "Normalized whole delivered and emitted answer exact match, verbatim exact, mean normalized tokenF1, token-bounded containment",
+  "memory": "Separate retained bank representation payload, physical storage tier, measured inference peak allocated/reserved GPU bytes, decoding KV bytes, retriever parameter bytes",
+  "persistent_payload_excludes": "Common LLM weights; RAG retriever weights reported separately and included in actual GPU peaks",
+  "cache_note": "All3methods use transient decoding KV. KVbaseline additionally retains full memory bank KV across questions.",
+  "expected_memory": "Exact model-config KV bytes/token times encoded prefix length; dense delta bytes/session; actual serialized RAG corpus+index",
+  "accuracy_target": "100% aspiration; no unmeasured baseline accuracy forecasts",
+  "references": {
+    "kv": "https://huggingface.co/docs/transformers/kv_cache",
+    "embedding": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+    "rag": "https://sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html"
+  }
+}
