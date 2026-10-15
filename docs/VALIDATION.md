@@ -16,3 +16,5 @@ python scripts/verify_release.py
 GPU reruns require the private source bank and checkpoints described in [REPRODUCING.md](REPRODUCING.md). CPU tests do not certify end-to-end GPU execution of the refactored packaging version.
 
 The final aggregate-only release passed 23 core tests and 11 preparation/release tests. All 19 final application/helper modules imported with CUDA disabled. Public checks cover 33 exported artifacts and 34 measured condition rows. Local detailed evidence checks covered 816 recorded answers from the same eight unique original questions; those records are not published.
+
+The dependency file pins PyArrow 25.0.1, used in the local test environment. An unconstrained fresh install selected PyArrow 26, whose NumPy 2 runtime requirement conflicts with this experiment’s NumPy 1.26 pin.

@@ -7,6 +7,8 @@ huggingface-hub==0.36.2
 numpy==1.26.4
 scipy==1.15.2
 datasets==2.21.0
+# Keep the measured NumPy 1.26-compatible Arrow wheel.
+pyarrow==25.0.1
 matplotlib==3.10.3
 safetensors==0.5.3
 tqdm==4.70.1
