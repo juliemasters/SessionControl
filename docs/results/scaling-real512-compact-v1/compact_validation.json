@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "maximum_relative_frobenius_error": 0.0009089263188295436,
+  "scope": "Empirical equivalence on64original own questions and32panel routes; approximation, not lossless/global equivalence.",
+  "identical_own_question_token_sequences": 64,
+  "identical_panel_routes": 32
+}

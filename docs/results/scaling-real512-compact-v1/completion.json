@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "physical_gpu": 1,
+  "real_sessions": 512,
+  "original_annotated_sessions": 64,
+  "new_extractive_annotations": 448,
+  "fixed_original_queries": 8,
+  "compact_validation_passed": true,
+  "base_weights_restored": true,
+  "historical_deltas_unchanged": true,
+  "written_factors_unchanged": true,
+  "protocol_unchanged": true,
+  "code_unchanged": true
+}

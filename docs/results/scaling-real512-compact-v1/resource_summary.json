@@ -1,0 +1,224 @@
+{
+  "elapsed_seconds": 9500.302759869955,
+  "base_model_parameter_bytes": 32121044992,
+  "embedding_parameter_bytes": 90852864,
+  "measurements": {
+    "model_loading": {
+      "elapsed_seconds": 11.014320285990834,
+      "peak_allocated_bytes": 32121045504,
+      "peak_reserved_bytes": 32130465792,
+      "end_allocated_bytes": 32121045504,
+      "base_parameter_bytes": 32121044992,
+      "cpu_base_backup_bytes": 704643072
+    },
+    "compact_validation": {
+      "elapsed_seconds": 99.68676766194403,
+      "peak_allocated_bytes": 33315055104,
+      "peak_reserved_bytes": 33478934528,
+      "end_allocated_bytes": 32129565696
+    },
+    "additional_writes": {
+      "elapsed_seconds": 7977.714274518192,
+      "peak_allocated_bytes": 36341465088,
+      "peak_reserved_bytes": 36662411264,
+      "end_allocated_bytes": 32138085376,
+      "count": 448,
+      "actual_factor_payload_bytes": 100274944
+    },
+    "our_delta_8": {
+      "elapsed_seconds": 6.170917397364974,
+      "peak_allocated_bytes": 32373040128,
+      "peak_reserved_bytes": 32413581312,
+      "end_allocated_bytes": 32138085376,
+      "persistent_payload_bytes": 1790464,
+      "persistent_tier": "Disk compact factors; streamed per query",
+      "additional_model_bytes": 0
+    },
+    "our_delta_16": {
+      "elapsed_seconds": 6.501106545794755,
+      "peak_allocated_bytes": 32373040128,
+      "peak_reserved_bytes": 32413581312,
+      "end_allocated_bytes": 32138085376,
+      "persistent_payload_bytes": 3580928,
+      "persistent_tier": "Disk compact factors; streamed per query",
+      "additional_model_bytes": 0
+    },
+    "our_delta_32": {
+      "elapsed_seconds": 7.113934640772641,
+      "peak_allocated_bytes": 32373040128,
+      "peak_reserved_bytes": 32413581312,
+      "end_allocated_bytes": 32138085376,
+      "persistent_payload_bytes": 7161856,
+      "persistent_tier": "Disk compact factors; streamed per query",
+      "additional_model_bytes": 0
+    },
+    "our_delta_64": {
+      "elapsed_seconds": 8.110096980817616,
+      "peak_allocated_bytes": 32373040128,
+      "peak_reserved_bytes": 32413581312,
+      "end_allocated_bytes": 32138085376,
+      "persistent_payload_bytes": 14323712,
+      "persistent_tier": "Disk compact factors; streamed per query",
+      "additional_model_bytes": 0
+    },
+    "our_delta_128": {
+      "elapsed_seconds": 10.088580840267241,
+      "peak_allocated_bytes": 32373040128,
+      "peak_reserved_bytes": 32413581312,
+      "end_allocated_bytes": 32138085376,
+      "persistent_payload_bytes": 28648704,
+      "persistent_tier": "Disk compact factors; streamed per query",
+      "additional_model_bytes": 0
+    },
+    "our_delta_256": {
+      "elapsed_seconds": 14.104117627255619,
+      "peak_allocated_bytes": 32373040128,
+      "peak_reserved_bytes": 32413581312,
+      "end_allocated_bytes": 32138085376,
+      "persistent_payload_bytes": 57298688,
+      "persistent_tier": "Disk compact factors; streamed per query",
+      "additional_model_bytes": 0
+    },
+    "our_delta_512": {
+      "elapsed_seconds": 22.07946562115103,
+      "peak_allocated_bytes": 32373040128,
+      "peak_reserved_bytes": 32413581312,
+      "end_allocated_bytes": 32138085376,
+      "persistent_payload_bytes": 114598656,
+      "persistent_tier": "Disk compact factors; streamed per query",
+      "additional_model_bytes": 0
+    },
+    "rag_index_setup": {
+      "elapsed_seconds": 0.26432835310697556,
+      "peak_allocated_bytes": 32243697152,
+      "peak_reserved_bytes": 32258392064,
+      "end_allocated_bytes": 32228946432,
+      "embedding_parameter_bytes": 90852864,
+      "vector_payload_bytes": 786432
+    },
+    "rag_qa_8": {
+      "elapsed_seconds": 82.17388039408252,
+      "peak_allocated_bytes": 33442445312,
+      "peak_reserved_bytes": 33751564288,
+      "end_allocated_bytes": 32228946432,
+      "persistent_payload_bytes": 127904,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_16": {
+      "elapsed_seconds": 82.42063252395019,
+      "peak_allocated_bytes": 33442445312,
+      "peak_reserved_bytes": 33751564288,
+      "end_allocated_bytes": 32228946432,
+      "persistent_payload_bytes": 268163,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_32": {
+      "elapsed_seconds": 82.69164702808484,
+      "peak_allocated_bytes": 33442445312,
+      "peak_reserved_bytes": 33751564288,
+      "end_allocated_bytes": 32228946432,
+      "persistent_payload_bytes": 515184,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_64": {
+      "elapsed_seconds": 82.74291695468128,
+      "peak_allocated_bytes": 33442445312,
+      "peak_reserved_bytes": 33751564288,
+      "end_allocated_bytes": 32228946432,
+      "persistent_payload_bytes": 1035745,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_128": {
+      "elapsed_seconds": 82.80100452015176,
+      "peak_allocated_bytes": 33442445312,
+      "peak_reserved_bytes": 33751564288,
+      "end_allocated_bytes": 32228946432,
+      "persistent_payload_bytes": 1919812,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_256": {
+      "elapsed_seconds": 82.82633577520028,
+      "peak_allocated_bytes": 33442445312,
+      "peak_reserved_bytes": 33751564288,
+      "end_allocated_bytes": 32228946432,
+      "persistent_payload_bytes": 3678382,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "rag_qa_512": {
+      "elapsed_seconds": 82.83124152570963,
+      "peak_allocated_bytes": 33442445312,
+      "peak_reserved_bytes": 33751564288,
+      "end_allocated_bytes": 32228946432,
+      "persistent_payload_bytes": 7169871,
+      "persistent_tier": "CPU/disk text and vector index",
+      "additional_model_bytes": 90852864
+    },
+    "kv_setup_8": {
+      "elapsed_seconds": 36.861474629025906,
+      "peak_allocated_bytes": 39461615616,
+      "peak_reserved_bytes": 40825257984,
+      "end_allocated_bytes": 38598624256,
+      "persistent_payload_bytes": 6460538880
+    },
+    "kv_full_qa_8": {
+      "elapsed_seconds": 27.268073349725455,
+      "peak_allocated_bytes": 39438480384,
+      "peak_reserved_bytes": 41051750400,
+      "end_allocated_bytes": 38611993600,
+      "persistent_payload_bytes": 6460538880,
+      "persistent_tier": "GPU full-bank prefix cache",
+      "setup_seconds": 36.861474629025906,
+      "setup_peak_allocated_bytes": 39461615616,
+      "setup_peak_reserved_bytes": 40825257984,
+      "additional_model_bytes": 0
+    },
+    "kv_setup_16": {
+      "elapsed_seconds": 106.95887120673433,
+      "peak_allocated_bytes": 47215835136,
+      "peak_reserved_bytes": 50388271104,
+      "end_allocated_bytes": 45446611968,
+      "persistent_payload_bytes": 13308526592
+    },
+    "kv_full_qa_16": {
+      "elapsed_seconds": 84.14704959094524,
+      "peak_allocated_bytes": 47153955840,
+      "peak_reserved_bytes": 49943674880,
+      "end_allocated_bytes": 45463651328,
+      "persistent_payload_bytes": 13308526592,
+      "persistent_tier": "GPU full-bank prefix cache",
+      "setup_seconds": 106.95887120673433,
+      "setup_peak_allocated_bytes": 47215835136,
+      "setup_peak_reserved_bytes": 50388271104,
+      "additional_model_bytes": 0
+    },
+    "kv_setup_32": {
+      "elapsed_seconds": 315.07901962613687,
+      "peak_allocated_bytes": 61203838976,
+      "peak_reserved_bytes": 65907195904,
+      "end_allocated_bytes": 57808274432,
+      "persistent_payload_bytes": 25670189056
+    },
+    "kv_full_qa_32": {
+      "elapsed_seconds": 111.00352496188134,
+      "peak_allocated_bytes": 61079687168,
+      "peak_reserved_bytes": 66133688320,
+      "end_allocated_bytes": 57821643776,
+      "persistent_payload_bytes": 25670189056,
+      "persistent_tier": "GPU full-bank prefix cache",
+      "setup_seconds": 315.07901962613687,
+      "setup_peak_allocated_bytes": 61203838976,
+      "setup_peak_reserved_bytes": 65907195904,
+      "additional_model_bytes": 0
+    }
+  },
+  "compact512_actual_bytes": 114598656,
+  "dense64_actual_bytes": 45097258048,
+  "dense_counterfactual_bytes_per_session": 704644657.0,
+  "cpu_base_backup_bytes": 704643072
+}

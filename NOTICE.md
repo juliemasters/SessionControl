@@ -6,7 +6,7 @@ This preparation preserves the existing project's licensing position: no new dis
 | --- | --- | --- |
 | `AlphaEdit/` and copied AlphaEdit hyperparameters | [AlphaEdit](https://github.com/jianghoucheng/AlphaEdit), copyright 2025 jianghc | [MIT](third_party/licenses/AlphaEdit-MIT.txt) |
 | `rome/`, `util/` | [ROME](https://github.com/kmeng01/rome) / [MEMIT](https://github.com/kmeng01/memit), copyright 2022 Kevin Meng | [MIT](third_party/licenses/ROME-MEMIT-MIT.txt) |
-| Benchmark question/answer excerpts in reports and evaluations | [LongMemEval](https://github.com/xiaowu0162/LongMemEval), copyright 2024 Di Wu | [MIT](third_party/licenses/LongMemEval-MIT.txt) |
+| Benchmark-derived aggregate results | [LongMemEval](https://github.com/xiaowu0162/LongMemEval), copyright 2024 Di Wu | [MIT](third_party/licenses/LongMemEval-MIT.txt) |
 
 AlphaEdit also acknowledges [EMMET](https://github.com/scalable-model-editing/unified-model-editing). This notice does not assign a separate license to that upstream project.
 

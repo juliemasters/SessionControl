@@ -1,5 +1,7 @@
 # Preserve recorded Matplotlib SVG bytes, including serializer whitespace.
 docs/results/**/*.svg -whitespace
+# Keep the measured CSV writer's standard CRLF serialization unchanged.
+docs/results/**/*.csv -text -whitespace
 *.py text eol=lf
 *.md text eol=lf
 *.json text eol=lf

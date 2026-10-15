@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check released historical evidence without loading models or requiring CUDA.
+"""Check final aggregate compact512/TTFT evidence without publishing per-item records without loading models or requiring CUDA.
 
 Original hashes attest to the recorded source artifacts. Only released_sha256 is
 checked against the normalized copies in this checkout; the two are not aliases.
@@ -93,76 +93,8 @@ def verify_summary(summary, trials, label):
         close(summary["mrr"], sum(1 / rank for rank in ranks) / len(ranks), f"{label}/mrr")
 
 
-def verify_condition(condition, label, expected_n):
-    if condition.get("available") is False:
-        require(not condition.get("trials") and condition.get("summary") is None
-                and condition.get("resources") is None,
-                f"{label}: unavailable condition must have no measured result")
-        require(condition.get("reason") == "context_limit", f"{label}: unexpected unavailable reason")
-        plan = condition["plan"]
-        require(plan["required_tokens"] > plan["context_limit"],
-                f"{label}: claimed context overflow does not exceed capacity")
-        require(plan["expected_payload_bytes"] == plan["prefix_tokens"] * plan["bytes_per_token"],
-                f"{label}: calculated cache payload does not match formula")
-        return 0
-    trials = condition.get("trials", [])
-    require(len(trials) == expected_n, f"{label}: expected {expected_n} trials, found {len(trials)}")
-    require(len({t["qid"] for t in trials}) == len(trials), f"{label}: duplicate questions")
-    for trial in trials:
-        for key, value in exact_flags(trial).items():
-            require(trial.get(key) == value, f"{label}/{trial['qid']}/{key}: inconsistent trial metric")
-        close(trial["token_f1"], token_f1(trial), f"{label}/{trial['qid']}/token_f1")
-        if "routing_correct" in trial:
-            require(trial["routing_correct"] ==
-                    (trial["selected_sid"] == trial["reference_source_sid"]),
-                    f"{label}/{trial['qid']}: inconsistent routing correctness")
-    verify_summary(condition["summary"], trials, label)
-    if "anchor24_summary" in condition:
-        anchor = [t for t in trials if t.get("history") == "previous_test"]
-        verify_summary(condition["anchor24_summary"], anchor, label + "/anchor24")
-    if "history_summaries" in condition:
-        histories = {t["history"] for t in trials}
-        require(set(condition["history_summaries"]) == histories, f"{label}: missing history strata")
-        for history, summary in condition["history_summaries"].items():
-            verify_summary(summary, [t for t in trials if t["history"] == history],
-                           f"{label}/{history}")
-    resources = condition["resources"]
-    for key, value in resources.items():
-        if key.endswith("_bytes"):
-            require(isinstance(value, int) and value >= 0, f"{label}/{key}: invalid memory measurement")
-    return len(trials)
 
 
-def verify_evaluation(evaluation, completion, label):
-    require(completion.get("completed") is True, f"{label}: experiment did not complete")
-    total = 0
-    expected_methods = {"our_delta", "rag_qa", "rag_context_only", "kv_full_qa"}
-    if "nested_bank_sizes" in evaluation:
-        sizes = evaluation["nested_bank_sizes"]
-        require(sizes == completion["nested_bank_sizes"], f"{label}: inconsistent bank sizes")
-        require(set(evaluation["results"]) == {str(n) for n in sizes}, f"{label}: missing bank sizes")
-        previous = None
-        for n in sizes:
-            methods = evaluation["results"][str(n)]
-            require(set(methods) == expected_methods,
-                    f"{label}/{n}: incomplete method set")
-            current = [t["qid"] for t in methods["our_delta"]["trials"]]
-            require(previous is None or current[:len(previous)] == previous,
-                    f"{label}: banks are not nested in recorded order")
-            previous = current
-            for method, condition in methods.items():
-                total += verify_condition(condition, f"{label}/{n}/{method}", n)
-                if condition.get("available", True):
-                    require([t["qid"] for t in condition["trials"]] == current,
-                            f"{label}/{n}/{method}: method question order differs")
-    else:
-        require(set(evaluation["results"]) == expected_methods,
-                f"{label}: incomplete method set")
-        require(len(evaluation["results"]) == completion["methods_completed"],
-                f"{label}: completed method count mismatch")
-        for method, condition in evaluation["results"].items():
-            total += verify_condition(condition, f"{label}/{method}", completion["answers_per_method"])
-    return total
 
 
 def verify_manifest(root):
@@ -256,28 +188,114 @@ def verify_public_files(root):
     return count
 
 
+
+
+
+
+
+
+
+
+
+
+def verify_aggregate_tables(root):
+    from fixed_query_scaling_core import SIZES
+    folder = root/'docs/results'
+    compact = json.loads((folder/'scaling-real512-compact-v1/comparison_table.json').read_text())
+    timed = json.loads((folder/'scaling-real512-ttft-v1/comparison_table.json').read_text())
+    accounting = json.loads((folder/'scaling-real512-compact-v1/memory_accounting.json').read_text())
+    rss = json.loads((folder/'scaling-real512-compact-v1/sampled_cpu_summary.json').read_text())['conditions']
+    resources = json.loads((folder/'scaling-real512-compact-v1/resource_summary.json').read_text())['measurements']
+    names = {'Compact AlphaEdit':'our_delta','Matched RAG':'rag_qa','Full-bank KV':'kv_full_qa'}
+    expected = {(n,m) for n in SIZES for m in names.values()}
+    require(compact['accuracy_denominator'] == 8, 'Accuracy denominator must remain eight')
+    require(len(compact['rows']) == len(timed['rows']) == len(expected), 'Missing aggregate rows')
+    mapped = {(r['n'],names[r['method']]):r for r in compact['rows']}
+    timing = {(r['n'],r['method']):r for r in timed['rows']}
+    require(set(mapped) == set(timing) == expected, 'Missing or duplicate size/method rows')
+    measured = 0
+    for (n,method), row in mapped.items():
+        t = timing[(n,method)]
+        available = method != 'kv_full_qa' or n <= 32
+        require(row['available'] is available and t['status'] == ('measured' if available else 'context_limit'),
+                'Incorrect method availability')
+        if not available:
+            for key in ['source_top1','exact','contains','retained_gib','sampled_peak_host_rss_bytes',
+                        'peak_gpu_allocated_bytes','peak_gpu_reserved_bytes','median_seconds','p95_seconds']:
+                require(row[key] is None, f'Unavailable {key} must be null')
+            for key in ['routing_correct','exact','mean_token_f1','ttft_median_ms','ttft_p95_ms',
+                        'total_median_ms','kv_cold_first_request_ms','kv_prefix_setup_ms']:
+                require(t[key] is None, f'Unavailable {key} must be null')
+            require(t['accuracy_queries'] == t['warm_timing_samples'] == 0, 'Unavailable samples must be zero')
+            continue
+        measured += 1
+        require(t['accuracy_queries'] == 8 and t['warm_timing_samples'] == 16,
+                'Timing repeats must not inflate accuracy denominator')
+        require(isinstance(row['exact'],int) and 0 <= row['exact'] <= 8 and row['exact'] == t['exact'],
+                'Inconsistent exact counts')
+        require(row['source_top1'] == t['routing_correct'], 'Inconsistent source selection counts')
+        require(row['source_top1'] is None if method == 'kv_full_qa' else
+                isinstance(row['source_top1'],int) and 0 <= row['source_top1'] <= 8,
+                'Invalid source selection count')
+        require(0 <= t['mean_token_f1'] <= 1, 'F1 must be a proportion')
+        require(0 <= t['ttft_median_ms'] <= t['ttft_p95_ms'] and
+                t['total_median_ms'] >= t['ttft_median_ms'], 'Invalid TTFT bounds')
+        require(0 <= row['median_seconds'] <= row['p95_seconds'], 'Invalid latency bounds')
+        memory = accounting['per_bank'][str(n)][method]
+        close(row['retained_gib'],memory['retained_payload_bytes']/2**30,'bank storage')
+        require(row['tier'] == memory['tier'], 'Memory tier mismatch')
+        resource = resources[method+'_'+str(n)]
+        for field,sourcefield in [('peak_gpu_allocated_bytes','peak_allocated_bytes'),
+                                  ('peak_gpu_reserved_bytes','peak_reserved_bytes')]:
+            require(row[field] == max(resource[sourcefield],resource.get('setup_'+sourcefield,0)),
+                    'GPU memory mismatch')
+        sample = rss[str(n)+'/'+method]
+        require(row['sampled_peak_host_rss_bytes'] == sample['sampled_peak_rss_bytes']
+                and row['host_rss_samples'] == sample['samples'], 'RSS sample mismatch')
+    return measured*2
+
+
+def verify_aggregate_privacy(root):
+    forbidden = {'question','answer','reference','output','text','token_ids','trials',
+                 'references','exact_mismatches','own_question_pairs','routing_checks'}
+    def check(value):
+        if isinstance(value,dict):
+            require(not forbidden.intersection(value), 'Per-item records must remain local')
+            for child in value.values():check(child)
+        elif isinstance(value,list):
+            for child in value:check(child)
+    for path in (root/'docs/results').rglob('*.json'):
+        check(json.loads(path.read_text()))
+
+
 def verify_release(root):
     root = Path(root).resolve()
     exports = verify_manifest(root)
-    trials = 0
-    for name in ("memory-comparison-v1", "memory-scaling-v1"):
-        folder = root / "docs/results" / name
-        evaluation = json.loads((folder / "evaluation.json").read_text())
-        completion = json.loads((folder / "completion.json").read_text())
-        trials += verify_evaluation(evaluation, completion, name)
-        require((folder / "report.html").is_file(), f"{name}: missing standalone report")
-        pngs = list(folder.glob("*.png"))
-        require(bool(pngs), f"{name}: missing graphs")
-        for png in pngs:
-            require(png.with_suffix(".svg").is_file(), f"{name}: missing SVG counterpart for {png.name}")
-    files = verify_public_files(root)
-    return dict(exported_artifacts=exports, verified_final_answers=trials, public_files=files)
+    verify_aggregate_privacy(root)
+    protocol = json.loads((root/'docs/results/aggregate_protocol.json').read_text())
+    require(protocol['stored_sessions'] == 512 and protocol['unique_evaluation_queries'] == 8
+            and protocol['repeats'] == 3 and protocol['warm_samples_per_condition'] == 16,
+            'Changed experiment scope')
+    for name in ['scaling-real512-compact-v1','scaling-real512-ttft-v1']:
+        folder = root/'docs/results'/name
+        completed = json.loads((folder/'completion.json').read_text())
+        require(completed['completed'] and completed['base_weights_restored']
+                and completed['physical_gpu'] == 1 and completed['real_sessions'] == 512,
+                'Run did not complete')
+        require((folder/'report.html').is_file(), 'Missing aggregate HTML report')
+        for png in folder.glob('*.png'):
+            require(png.with_suffix('.svg').is_file() and png.with_suffix('.pdf').is_file(),
+                    'Missing vector counterpart')
+    conditions = verify_aggregate_tables(root)
+    return dict(exported_artifacts=exports, verified_measured_condition_rows=conditions,
+                unique_original_questions=8, public_files=verify_public_files(root))
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     args = parser.parse_args(argv)
+    sys.path.insert(0, str(args.root.resolve()))
     try:
         result = verify_release(args.root)
     except (ReleaseError, KeyError, OSError, subprocess.CalledProcessError) as error:

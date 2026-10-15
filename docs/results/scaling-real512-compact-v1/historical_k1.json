@@ -1,0 +1,45 @@
+{
+  "n_items": 8,
+  "rate_denominator": "All selected items; write failures count as failures",
+  "ci_method": "Wilson 95%",
+  "write_success_rate": 1.0,
+  "write_success_rate_ci95": [
+    0.6755924351161198,
+    1
+  ],
+  "fire_rate_immediate": 1.0,
+  "fire_rate_immediate_ci95": [
+    0.6755924351161198,
+    1
+  ],
+  "fire_rate_delayed": 1.0,
+  "fire_rate_delayed_ci95": [
+    0.6755924351161198,
+    1
+  ],
+  "base_fire_rate": 0.0,
+  "base_fire_rate_ci95": [
+    0,
+    0.32440756488388023
+  ],
+  "exact_match_rate": 0.0,
+  "exact_match_rate_ci95": [
+    0,
+    0.32440756488388023
+  ],
+  "partial_match_rate": 1.0,
+  "partial_match_rate_ci95": [
+    0.6755924351161198,
+    1
+  ],
+  "mean_probe_length": 16.0,
+  "probe_length_denominator": 8,
+  "mean_token_logprob_delta": 0.0,
+  "mean_abs_token_logprob_delta": 0.0,
+  "max_abs_token_logprob_delta": 0.0,
+  "base_ppl_before": 16.74896136682618,
+  "base_ppl_after": 16.74896136682618,
+  "base_ppl_delta": 0.0,
+  "scope": "Base restored before/after; not edited-model preservation",
+  "base_after_fire_rate": 0.0
+}

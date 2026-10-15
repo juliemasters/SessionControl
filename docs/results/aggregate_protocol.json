@@ -1,0 +1,27 @@
+{
+  "bank_sizes": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "stored_sessions": 512,
+  "original_annotated_sessions": 64,
+  "new_extractive_annotations": 448,
+  "unique_evaluation_queries": 8,
+  "repeats": 3,
+  "warm_samples_per_condition": 16,
+  "physical_gpu": 1,
+  "model": "Llama-3.1-8B-Instruct",
+  "dtype": "float32",
+  "layers": [
+    13,
+    14,
+    15
+  ],
+  "scope": "Exploratory exact original questions, previously inspected; no held-out generalization or 512-question accuracy claim.",
+  "publication": "Aggregate metrics and final code only. Per-item benchmark/session-derived records remain local."
+}

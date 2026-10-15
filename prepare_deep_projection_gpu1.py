@@ -7,12 +7,12 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-from zsre_routing_experiment import require_gpu1
+from experiment_utils import require_gpu1
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--out',required=True)
     p.add_argument('--layers',default='13,14,15')
-    p.add_argument('--corpus',default='data/preservation_calibration.example.jsonl')
+    p.add_argument('--corpus',required=True)
     p.add_argument('--threshold',type=float,default=.02)
     a=p.parse_args();out=Path(a.out)
     if out.exists():raise FileExistsError(out)

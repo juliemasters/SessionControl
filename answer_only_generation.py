@@ -32,7 +32,7 @@ def generate_answer_batch(model, tokenizer, questions, *, stop_at_turn=True, cap
     """Only literal question strings reach generation; no references or sessions."""
     import torch
     from transformers import StoppingCriteriaList
-    from question_key_k1_core import prompt
+    from question_key import prompt
 
     if any(not isinstance(q, str) or not q.strip() for q in questions):
         raise ValueError('Nonempty literal question strings required')
@@ -74,7 +74,7 @@ def generate_answer_batch(model, tokenizer, questions, *, stop_at_turn=True, cap
 
 def reference_tokens_present(text, answer):
     """Evaluation-only containment with token boundaries: 500 does not match 5000."""
-    from question_key_k1_core import normalize
+    from question_key import normalize
     value, target = normalize(text).split(), normalize(answer).split()
     return bool(target) and any(value[i:i+len(target)] == target
                                for i in range(len(value)-len(target)+1))

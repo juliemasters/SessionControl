@@ -1,0 +1,171 @@
+{
+  "common_llm_parameter_bytes": 32121044992,
+  "compact_cpu_base_backup_bytes": 704643072,
+  "rag_additional_gpu_parameter_bytes": 90852864,
+  "rag_cpu_vector_bytes": 786432,
+  "rag_live_gpu_vector_bytes": 0,
+  "per_bank": {
+    "8": {
+      "our_delta": {
+        "retained_payload_bytes": 1790464,
+        "tier": "Disk compact factors; streamed per query",
+        "max_decode_cache_bytes": 6029312,
+        "cache_kind": "configuration estimate",
+        "available": true
+      },
+      "rag_qa": {
+        "retained_payload_bytes": 127904,
+        "tier": "CPU/disk text and vector index",
+        "max_decode_cache_bytes": 1069285376,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      },
+      "kv_full_qa": {
+        "retained_payload_bytes": 6460538880,
+        "tier": "GPU full-bank prefix cache",
+        "max_decode_cache_bytes": 6476791808,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      }
+    },
+    "16": {
+      "our_delta": {
+        "retained_payload_bytes": 3580928,
+        "tier": "Disk compact factors; streamed per query",
+        "max_decode_cache_bytes": 6029312,
+        "cache_kind": "configuration estimate",
+        "available": true
+      },
+      "rag_qa": {
+        "retained_payload_bytes": 268163,
+        "tier": "CPU/disk text and vector index",
+        "max_decode_cache_bytes": 1069285376,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      },
+      "kv_full_qa": {
+        "retained_payload_bytes": 13308526592,
+        "tier": "GPU full-bank prefix cache",
+        "max_decode_cache_bytes": 13325565952,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      }
+    },
+    "32": {
+      "our_delta": {
+        "retained_payload_bytes": 7161856,
+        "tier": "Disk compact factors; streamed per query",
+        "max_decode_cache_bytes": 6029312,
+        "cache_kind": "configuration estimate",
+        "available": true
+      },
+      "rag_qa": {
+        "retained_payload_bytes": 515184,
+        "tier": "CPU/disk text and vector index",
+        "max_decode_cache_bytes": 1069285376,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      },
+      "kv_full_qa": {
+        "retained_payload_bytes": 25670189056,
+        "tier": "GPU full-bank prefix cache",
+        "max_decode_cache_bytes": 25686441984,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      }
+    },
+    "64": {
+      "our_delta": {
+        "retained_payload_bytes": 14323712,
+        "tier": "Disk compact factors; streamed per query",
+        "max_decode_cache_bytes": 6029312,
+        "cache_kind": "configuration estimate",
+        "available": true
+      },
+      "rag_qa": {
+        "retained_payload_bytes": 1035745,
+        "tier": "CPU/disk text and vector index",
+        "max_decode_cache_bytes": 1069285376,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      },
+      "kv_full_qa": {
+        "retained_payload_bytes": null,
+        "tier": null,
+        "max_decode_cache_bytes": null,
+        "cache_kind": "actual tensor payload",
+        "available": false
+      }
+    },
+    "128": {
+      "our_delta": {
+        "retained_payload_bytes": 28648704,
+        "tier": "Disk compact factors; streamed per query",
+        "max_decode_cache_bytes": 6029312,
+        "cache_kind": "configuration estimate",
+        "available": true
+      },
+      "rag_qa": {
+        "retained_payload_bytes": 1919812,
+        "tier": "CPU/disk text and vector index",
+        "max_decode_cache_bytes": 1069285376,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      },
+      "kv_full_qa": {
+        "retained_payload_bytes": null,
+        "tier": null,
+        "max_decode_cache_bytes": null,
+        "cache_kind": "actual tensor payload",
+        "available": false
+      }
+    },
+    "256": {
+      "our_delta": {
+        "retained_payload_bytes": 57298688,
+        "tier": "Disk compact factors; streamed per query",
+        "max_decode_cache_bytes": 6029312,
+        "cache_kind": "configuration estimate",
+        "available": true
+      },
+      "rag_qa": {
+        "retained_payload_bytes": 3678382,
+        "tier": "CPU/disk text and vector index",
+        "max_decode_cache_bytes": 1069285376,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      },
+      "kv_full_qa": {
+        "retained_payload_bytes": null,
+        "tier": null,
+        "max_decode_cache_bytes": null,
+        "cache_kind": "actual tensor payload",
+        "available": false
+      }
+    },
+    "512": {
+      "our_delta": {
+        "retained_payload_bytes": 114598656,
+        "tier": "Disk compact factors; streamed per query",
+        "max_decode_cache_bytes": 6029312,
+        "cache_kind": "configuration estimate",
+        "available": true
+      },
+      "rag_qa": {
+        "retained_payload_bytes": 7169871,
+        "tier": "CPU/disk text and vector index",
+        "max_decode_cache_bytes": 1069285376,
+        "cache_kind": "actual tensor payload",
+        "available": true
+      },
+      "kv_full_qa": {
+        "retained_payload_bytes": null,
+        "tier": null,
+        "max_decode_cache_bytes": null,
+        "cache_kind": "actual tensor payload",
+        "available": false
+      }
+    }
+  },
+  "note": "Retained representation chart measures the active-prefix file/tensor payload, not total experiment-directory storage. It excludes common LLM and reports auxiliary model parameters/base backup separately here. RAG serialized text/vectors are on disk; the full 512 vector array remains live on CPU at smaller N and is included in host RSS. The encoder and Llama run on GPU. CUDA peaks include model parameters. CPU sampled RSS includes harness metadata and backup even during baseline stages. This is not isolated deployment-memory accounting. Transient decode cache is distinct from persistent bank storage. Projection is write-only and released before recall measurements."
+}

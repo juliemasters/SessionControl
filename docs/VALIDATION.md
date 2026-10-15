@@ -1,15 +1,18 @@
-# Packaging validation
+# Validation scope
 
-Checks performed locally on the prepared tree:
+The published compact512 run records successful completion, restored base weights, unchanged original dense deltas, unchanged factors and a frozen protocol/code. Its compact validation checks 64 own-question token sequences, 32 panel routing selections and the numerical reconstruction gate. The later TTFT replay records identical emitted token IDs and selected sources for all 408 corresponding trials.
 
-- 42 existing and experiment CPU unit tests passed, including weight restoration, delta routing, independent answer stopping, and reusable KV prefix/tail integrity.
-- 14 preparation and release CPU tests passed, including literal cohort reconstruction, real-file bootstrap metadata contracts, process replacement before the scaling stage, immutable artifacts, and independent exported metric verification.
-- Real source-dataset preprocessing reproduced all 64 original question/answer/full-session fields and ordering, with an identical 200-turn preservation-corpus digest.
-- The released modules import successfully without loading checkpoints. Documentation links and local dependency closure were checked.
-- Export verification checked all 37 artifact digests and independently reproduced measures from 656 historical final answers: 96 in the original comparison and 560 across nested scaling conditions.
-- A historical report-builder smoke check regenerated four figure pairs and HTML from copies of actual completed-run evidence, reproduced all three earlier 24-question controls, and left original results unchanged.
-- A standalone public-tree copy verified without `.git`. Public files were scanned for accidental credentials, machine-specific paths, model tensors, logs, and files exceeding GitHub's size limit.
+Cleanup extracted common IO/GPU/evaluation helpers and grounded question-key construction from retired scripts. It retained the scoring, compact solver, cache decoding and answer-stopping algorithms. No new neural benchmark was run during packaging; recorded measurements and original source hashes remain historical.
 
-No new GPU experiment, model write, remote upload, or GitHub Actions run was performed during packaging. The clean-checkout bootstrap is covered by CPU metadata/process tests; its complete new GPU execution remains unverified. The published accuracy and memory numbers belong to the completed historical runs.
+CPU validation checks numerical factor scores against materialized deltas, the compact solver against a dense linear solve, answer boundaries, reusable KV-cache correctness, timing observers against unchanged generated tokens, frozen panel/repeat rules and cohort reconstruction. Public release checks validate hashes, aggregate table consistency, memory tiers, timing bounds and the exclusion of per-item data. Detailed question/answer records remain local.
 
-To repeat the checks, use the CPU commands in the root README. Run `git diff --check` in a Git checkout. Full reproduction and its hardware requirements are documented separately in `REPRODUCING.md`.
+
+```bash
+CUDA_VISIBLE_DEVICES="" python -m unittest discover -v
+CUDA_VISIBLE_DEVICES="" python -m unittest discover -s tests -v
+python scripts/verify_release.py
+```
+
+GPU reruns require the private source bank and checkpoints described in [REPRODUCING.md](REPRODUCING.md). CPU tests do not certify end-to-end GPU execution of the refactored packaging version.
+
+The final aggregate-only release passed 23 core tests and 11 preparation/release tests. All 19 final application/helper modules imported with CUDA disabled. Public checks cover 33 exported artifacts and 34 measured condition rows. Local detailed evidence checks covered 816 recorded answers from the same eight unique original questions; those records are not published.

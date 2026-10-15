@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "physical_gpu": 1,
+  "source_unchanged": true,
+  "base_weights_restored": true,
+  "code_unchanged": true,
+  "protocol_unchanged": true,
+  "all_outputs_and_routes_replayed": true,
+  "real_sessions": 512,
+  "fixed_original_queries": 8,
+  "elapsed_seconds": 1357.5098491571844
+}

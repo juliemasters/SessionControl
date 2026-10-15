@@ -1,0 +1,93 @@
+{
+  "interval_seconds": 0.5,
+  "conditions": {
+    "8/our_delta": {
+      "sampled_peak_rss_bytes": 2770370560,
+      "samples": 12
+    },
+    "16/our_delta": {
+      "sampled_peak_rss_bytes": 2770370560,
+      "samples": 14
+    },
+    "32/our_delta": {
+      "sampled_peak_rss_bytes": 2770370560,
+      "samples": 14
+    },
+    "64/our_delta": {
+      "sampled_peak_rss_bytes": 2770583552,
+      "samples": 17
+    },
+    "128/our_delta": {
+      "sampled_peak_rss_bytes": 2770583552,
+      "samples": 20
+    },
+    "256/our_delta": {
+      "sampled_peak_rss_bytes": 2771288064,
+      "samples": 29
+    },
+    "512/our_delta": {
+      "sampled_peak_rss_bytes": 2772201472,
+      "samples": 44
+    },
+    "8/rag_qa": {
+      "sampled_peak_rss_bytes": 2782167040,
+      "samples": 165
+    },
+    "16/rag_qa": {
+      "sampled_peak_rss_bytes": 2782318592,
+      "samples": 165
+    },
+    "32/rag_qa": {
+      "sampled_peak_rss_bytes": 2782429184,
+      "samples": 166
+    },
+    "64/rag_qa": {
+      "sampled_peak_rss_bytes": 2782695424,
+      "samples": 166
+    },
+    "128/rag_qa": {
+      "sampled_peak_rss_bytes": 2782867456,
+      "samples": 166
+    },
+    "256/rag_qa": {
+      "sampled_peak_rss_bytes": 2782867456,
+      "samples": 166
+    },
+    "512/rag_qa": {
+      "sampled_peak_rss_bytes": 2783162368,
+      "samples": 167
+    },
+    "8/kv_full_qa": {
+      "sampled_peak_rss_bytes": 2783162368,
+      "samples": 129
+    },
+    "16/kv_full_qa": {
+      "sampled_peak_rss_bytes": 2784473088,
+      "samples": 384
+    },
+    "32/kv_full_qa": {
+      "sampled_peak_rss_bytes": 2785603584,
+      "samples": 851
+    }
+  },
+  "final_recall_boundary": {
+    "after_method": "kv_full_qa",
+    "after_n": 32,
+    "cpu_samples_through_final_recall": 18767,
+    "observer_poll_seconds": 0.02,
+    "measurement": {
+      "elapsed_seconds": 111.00352496188134,
+      "peak_allocated_bytes": 61079687168,
+      "peak_reserved_bytes": 66133688320,
+      "end_allocated_bytes": 57821643776,
+      "persistent_payload_bytes": 25670189056,
+      "persistent_tier": "GPU full-bank prefix cache",
+      "setup_seconds": 315.07901962613687,
+      "setup_peak_allocated_bytes": 61203838976,
+      "setup_peak_reserved_bytes": 65907195904,
+      "additional_model_bytes": 0
+    },
+    "note": "Observed durable final recall completion independently of stale status during later capacity checks. Observed boundary may lag completion by polling/IO delay; no inferred RSS values."
+  },
+  "note": "Sampled recall/setup phase process RSS, not lifetime ru_maxrss. N is recorded. Includes shared model CPU allocations, all 512 metadata, allocator retention and backup even during baselines. This is a sampled maximum, not an exact or incremental per-method peak."
+}

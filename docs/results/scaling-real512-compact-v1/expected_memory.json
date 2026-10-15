@@ -1,0 +1,54 @@
+{
+  "values": {
+    "8": {
+      "compact_raw_factor_bytes": 1769472,
+      "rag_corpus_plus_raw_vector_bytes": 126694,
+      "dense_counterfactual_bytes": 5637157256.0,
+      "kv_required_prefix_bytes": 6460538880,
+      "kv_context_feasible": true
+    },
+    "16": {
+      "compact_raw_factor_bytes": 3538944,
+      "rag_corpus_plus_raw_vector_bytes": 266953,
+      "dense_counterfactual_bytes": 11274314512.0,
+      "kv_required_prefix_bytes": 13308526592,
+      "kv_context_feasible": true
+    },
+    "32": {
+      "compact_raw_factor_bytes": 7077888,
+      "rag_corpus_plus_raw_vector_bytes": 513974,
+      "dense_counterfactual_bytes": 22548629024.0,
+      "kv_required_prefix_bytes": 25670189056,
+      "kv_context_feasible": true
+    },
+    "64": {
+      "compact_raw_factor_bytes": 14155776,
+      "rag_corpus_plus_raw_vector_bytes": 1034535,
+      "dense_counterfactual_bytes": 45097258048.0,
+      "kv_required_prefix_bytes": 51407486976,
+      "kv_context_feasible": false
+    },
+    "128": {
+      "compact_raw_factor_bytes": 28311552,
+      "rag_corpus_plus_raw_vector_bytes": 1918602,
+      "dense_counterfactual_bytes": 90194516096.0,
+      "kv_required_prefix_bytes": 93892378624,
+      "kv_context_feasible": false
+    },
+    "256": {
+      "compact_raw_factor_bytes": 56623104,
+      "rag_corpus_plus_raw_vector_bytes": 3677172,
+      "dense_counterfactual_bytes": 180389032192.0,
+      "kv_required_prefix_bytes": 178504597504,
+      "kv_context_feasible": false
+    },
+    "512": {
+      "compact_raw_factor_bytes": 113246208,
+      "rag_corpus_plus_raw_vector_bytes": 7168661,
+      "dense_counterfactual_bytes": 360778064384.0,
+      "kv_required_prefix_bytes": 346192609280,
+      "kv_context_feasible": false
+    }
+  },
+  "note": "All actual banks512 were evaluated by compact AlphaEdit and RAG. Dense beyond64 was not stored; it is a counterfactual. KV required payload is calculated from actual encoded banks and is not an allocation where infeasible. Compact raw factors exclude serialization headers; RAG expected vectors exclude tensor serialization headers."
+}

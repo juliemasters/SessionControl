@@ -1,0 +1,60 @@
+{
+  "new448_own_question_diagnostics": {
+    "n": 448,
+    "returned_exact": {
+      "count": 442,
+      "rate": 0.9866071428571429,
+      "ci95": [
+        0.9710923614552409,
+        0.9938478658934395
+      ]
+    },
+    "emitted_exact": {
+      "count": 442,
+      "rate": 0.9866071428571429,
+      "ci95": [
+        0.9710923614552409,
+        0.9938478658934395
+      ]
+    },
+    "verbatim_exact": {
+      "count": 442,
+      "rate": 0.9866071428571429,
+      "ci95": [
+        0.9710923614552409,
+        0.9938478658934395
+      ]
+    },
+    "contains_reference": {
+      "count": 442,
+      "rate": 0.9866071428571429,
+      "ci95": [
+        0.9710923614552409,
+        0.9938478658934395
+      ]
+    },
+    "hit_cap": {
+      "count": 2,
+      "rate": 0.004464285714285714,
+      "ci95": [
+        0.001225123093875403,
+        0.01612932428499135
+      ]
+    },
+    "eos": {
+      "count": 446,
+      "rate": 0.9955357142857143,
+      "ci95": [
+        0.9838706757150085,
+        0.9987748769061245
+      ]
+    },
+    "mean_token_f1": 0.9945922859477426,
+    "mean_output_tokens": 17.774553571428573,
+    "mean_query_seconds": 17.791803101195132,
+    "max_query_cache_payload_bytes": 0
+  },
+  "legacy64_identical_token_pairs": 64,
+  "note": "New extractive own-question diagnostics are not the eight original routing test. Grounded labels are literal user quotes, not semantic annotations for all session facts.",
+  "exact_mismatch_count": 6
+}

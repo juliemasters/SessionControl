@@ -122,7 +122,7 @@ def main():
     if not args.out.resolve().is_relative_to((root / "runs").resolve()):
         raise ValueError("Generated source data must remain under the ignored repository runs directory")
     print("Prepared", prepare(args.data, args.manifest, args.out))
-    print("No model execution occurred. Build the projector before bootstrapping.")
+    print("No model execution occurred. This step reconstructs source data and the preservation corpus only.")
 
 
 if __name__ == "__main__":
