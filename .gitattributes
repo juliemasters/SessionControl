@@ -2,6 +2,9 @@
 docs/results/**/*.svg -whitespace
 # Keep the measured CSV writer's standard CRLF serialization unchanged.
 docs/results/**/*.csv -text -whitespace
+# Preserve published baseline checksums and unchanged upstream source whitespace.
+experiments/wise_qa500/reference/*.csv -text -whitespace
+third_party/wise/**/*.py -whitespace
 *.py text eol=lf
 *.md text eol=lf
 *.json text eol=lf

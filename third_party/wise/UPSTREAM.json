@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/zjunlp/EasyEdit",
+  "commit": "4c109870955a4522ac3d7cf10ad00f34de8e4f0d",
+  "source_subdirectory": "easyeditor",
+  "files": {
+    "models/wise/WISE.py": "0d0a9b488e5db78c853514c8b216d5c11b10ebf9199f9a0152edf8bf78802ad9",
+    "models/wise/utils.py": "3cacd660149b370f364df2e15f0dc6dfd50d1f84da0f2001cef5351c21e6b4df",
+    "models/wise/wise_hparams.py": "97bd3285780b554883329a95793a8f5c359ad52f5a9eca939c4ecad3c63f40cf",
+    "models/wise/merge/__init__.py": "4f0b0f15044798dacbdb1bcca5c5356d7f15fd382463c9648fcea5a480abc137",
+    "models/wise/merge/gta.py": "06e878bdac4e68d6ca9e5e6b264141655edc60fe355412d61bb78281a691263a",
+    "models/wise/merge/linear.py": "73d4656fa25b6a3d63c705127048e80e7ebf519667d09a166434fabb957bd320",
+    "models/wise/merge/slerp.py": "dd7aaa0f75991ddf5c30317ed4cfb766a780faff05d4f34bcdbbac2ccca4ebc9",
+    "models/wise/merge/utils.py": "ebfc06f83df836e196ebceb6440cfc2f6ffecbfe5dfd0370e25e7eddf17e7d2a",
+    "util/hparams.py": "bf6d80b716da986980499125909fc7060dc04e1a52f16690fced96b5372869b3",
+    "util/vl_utils.py": "3bdf2ca27f410c41f7fdfbe1625231eb9c18c994510468912dedeb378d957c65"
+  },
+  "modifications": "None. A separate integration subclass optimizes masked loss projection without changing the loss or gradient."
+}

@@ -1,5 +1,13 @@
 # SessionControl
 
+## WISE comparison on 500 stored conversations
+
+The [WISE-Retrieve experiment](experiments/wise_qa500/README.md) adds the pinned official EasyEdit implementation to the full-Q/A comparison at 8,16,32,64,128,256,500 conversations. It uses the complete source context, exact official question and full reference answer, WISE's native router, ten actual inference passes, final-answer F1/exact match, TTFT and separate memory tiers. The final prefix has 283 eligible official questions. Previous measured baseline aggregates are included with checksums and are explicitly reused; they are not new WISE measurements.
+
+The WISE GPU run is in progress. Code and real tiny-Llama integration tests are available; full WISE results will be published only after all writes and ten-pass checkpoint measurements complete and pass audit. No WISE success or accuracy claim is made from the tests. See [reproduction commands and protocol](experiments/wise_qa500/README.md).
+
+The earlier 512-session/eight-question study below is a separate experiment.
+
 Independent AlphaEdit session memories with question-only activation routing, compact delta storage, and measured comparisons against matched RAG and full-bank KV caching.
 
 The final experiment measures **8, 16, 32, 64, 128, 256, and 512 real LongMemEval sessions** on physical GPU 1. Every bank size uses the same **eight original questions**, exactly as supplied at write time. No paraphrases or BERT scorer are used.

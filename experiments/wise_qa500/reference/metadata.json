@@ -1,0 +1,18 @@
+{
+  "source_run": "qa500-checkpoints-tenpass-v2",
+  "source_completion_sha256": "22b8dedef3afdaa39f112a3542693a0c1b41cb7c9c5910d3f8ee4f5ad67bc17b",
+  "finished_utc": "2026-10-23T15:28:33.688324+00:00",
+  "passes": 10,
+  "dataset_sha256": "08d8dad4be43ee2049a22ff5674eb86725d0ce5ff434cde2627e5e8e7e117894",
+  "dataset_name": "longmemeval_s.json",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_config_sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+  "tokenizer_sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+  "sessions_canonical_sha256": "f27e5a1a9a52a7329984a9b37dcdf42bc7dfb8c1e3a948d5ff77159636868e34",
+  "queries_canonical_sha256": "e5d73c2ca63e7ee2720a72a0bcb3a3fb5c6dafc8d1d950a8bb6916e2bbe11e85",
+  "results": {
+    "comparison.json": "a369b7503e60928e54f6e0d8fe85dc8246a173d1d98ceddeb5db0c4f1254f813",
+    "comparison.csv": "69f5e159fdcc29880147e86b1c69968201932a5d26a20074dc59a7b676639a17"
+  },
+  "note": "Previously measured baseline aggregates, not newly generated WISE results. Raw conversations, answers and weights are excluded."
+}
