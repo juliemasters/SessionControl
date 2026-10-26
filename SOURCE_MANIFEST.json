@@ -1,0 +1,104 @@
+{
+  "experiment": "qa500-checkpoints-tenpass-v2",
+  "passes": 10,
+  "checkpoints": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    500
+  ],
+  "stored_conversations": 500,
+  "final_eligible_questions": 283,
+  "algorithm": "Independent full-Q/A AlphaEdit deltas with question-only normalized activation routing; no BERT.",
+  "verified_measured_files": [
+    {
+      "path": "experiments/activation_qa500/qa500_core.py",
+      "sha256": "66bd3b5eb4360542a8b336eb8eb1198b51f8403a601640418707fef573658a0f",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "experiments/activation_qa500/qa500_build.py",
+      "sha256": "f48ac0770cc2b38ecc8354ff717f149909544222d9da19ebb99dee7465a355e9",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "experiments/activation_qa500/qa500_eval.py",
+      "sha256": "394e61a890d2ba4036aaee2319a19c5a2bad0f245ef50d1efcd9abfcfc629aef",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "experiments/activation_qa500/comparison_core.py",
+      "sha256": "b797a973c6e181d544742b1b1fe75799c060128772b70081f931fd970ff1505d",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "experiments/activation_qa500/full500_core.py",
+      "sha256": "1a187ecee5969675f87c25360648239038327d5c98a3171ae32beee7e3f3af12",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "session_write.py",
+      "sha256": "678bfa4bcb0c76728e876e071d4495354d588e4381f0e075b6e92ffeb347367b",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "question_key.py",
+      "sha256": "056cde65538c4def33cce5a7809f82e60783d0a3c5bc5bca3bbed3cb985550c7",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "compact_session_memory.py",
+      "sha256": "6b428ef3271264b736b0adbe97b18f2f2f9571551fcc53bca91f912a35b8e1bc",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "answer_only_generation.py",
+      "sha256": "dd4897758f545ca328206e0bb2ae4098c71784944011a37632fc8ea855e32896",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "experiment_utils.py",
+      "sha256": "7158162529d4c1aeb05eb51c67b233fd39d91d1ac23869aa1d7850bb1e3fe60e",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "memory_comparison_core.py",
+      "sha256": "d5b85b907a0fc75bc3ab11f88ca2c423da71996e5de591b3acff3ffb836b169b",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "ttft_timing.py",
+      "sha256": "58afe197a1e8bcb7272e70d939fce55b906c34943541071327005e9c319734e2",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "AlphaEdit/AlphaEdit_main.py",
+      "sha256": "a4d24f793b2a711c7c415894b98f2bbe1c51661a862f61add4570d76a38cdb89",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "AlphaEdit/compute_z.py",
+      "sha256": "f238f3d027d35a02b13fea2170aaaf45b48c7b6fee4606d58ec17ce1aeef8a1f",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "AlphaEdit/compute_ks.py",
+      "sha256": "6c5b53d4a1fae02d7b303fe67acc724b31261e2a82b915de4c3862661023bdba",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "AlphaEdit/grounded_value.py",
+      "sha256": "5fa074f5a9154465046f17be78687d0c63677503a46d4e0e68e409a4d989819e",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    },
+    {
+      "path": "config/alphaedit-hparams.json",
+      "sha256": "09bba486fd5cae61efb997f99c74d02024b7815ad02c266874bb33461efa22b1",
+      "verified_against": "completed qa500-checkpoints-tenpass-v2, our_delta/run-09"
+    }
+  ],
+  "note": "The 17 execution-tracked source files are byte-identical to the completed run. Reporting/launch helpers are the latest workspace versions. External model, dataset, projector and stored bank are required and excluded."
+}
