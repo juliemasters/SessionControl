@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "physical_gpu": 1,
+  "conversations": 500,
+  "bindings": 508,
+  "passes": 10,
+  "checkpoints": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    500
+  ],
+  "final_eligible_questions": 283,
+  "wise_verified_requests": 6630,
+  "baseline_metrics_reused": true,
+  "finished_utc": "2026-10-26T17:33:41.863016+00:00"
+}
