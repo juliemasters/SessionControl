@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/zjunlp/EasyEdit",
+  "revision": "119c004395aab6f9101637ccc9e8d5520c084a09",
+  "date": "2024-12-19",
+  "selection": "Last upstream repository commit before 2024-12-20 UTC, contemporaneous with paper v3; not claimed to identify an undisclosed exact experiment commit.",
+  "files": {
+    "easyeditor/models/wise/WISE.py": "03a9b14bce10a6b400e07f71a2efd9a76ba55afcbd11a2e8fb7eb2912483d08f",
+    "easyeditor/models/wise/utils.py": "4a46038fb477e6bb4b623cf089c96192152a6800e766165347fd4f95ac45e587",
+    "easyeditor/models/wise/wise_main.py": "5d3146e3609f25a662bae31c2193743342e0b90290a5684ed45cf0244b1e8c15",
+    "easyeditor/models/wise/wise_hparams.py": "a878892206f4267c2924f1e1b7b154523d630635f5b4dee8797709c6bdffb838",
+    "easyeditor/models/wise/merge/__init__.py": "4f0b0f15044798dacbdb1bcca5c5356d7f15fd382463c9648fcea5a480abc137",
+    "easyeditor/models/wise/merge/gta.py": "06e878bdac4e68d6ca9e5e6b264141655edc60fe355412d61bb78281a691263a",
+    "easyeditor/models/wise/merge/linear.py": "73d4656fa25b6a3d63c705127048e80e7ebf519667d09a166434fabb957bd320",
+    "easyeditor/models/wise/merge/slerp.py": "dd7aaa0f75991ddf5c30317ed4cfb766a780faff05d4f34bcdbbac2ccca4ebc9",
+    "easyeditor/models/wise/merge/utils.py": "ebfc06f83df836e196ebceb6440cfc2f6ffecbfe5dfd0370e25e7eddf17e7d2a",
+    "easyeditor/util/hparams.py": "9ee7a423fd70a9eaacb4c2ef1aaf2268ba87e28656fd7e3c562a7c9505d25b72",
+    "easyeditor/evaluate/evaluate_utils.py": "2cf61cd1b1096addc21e4491e7f5e05ea7b995cb4216c9c9efc6868f65609862",
+    "easyeditor/editors/editor.py": "d2489683f6e03f1418d08b2ca3a72b8e54350b7f22f8de22a9304fba12708e63",
+    "easyeditor/editors/utils.py": "f521e3508a3ceae91985be1eb92ff11331f53890193e95b61e2cfca1be3e014d",
+    "hparams/WISE/mistral-7b.yaml": "bdea06da40777ec5c7b4844b54f03529c507bae3c5af3b623c36c3baf96a61a7",
+    "hparams/WISE/llama-7b.yaml": "0b55bf7338a8f5731ed969a1d832d83a4c6d706b1ed1c05dac64a721592dd149",
+    "examples/run_wise_editing.py": "c58e3b5a8f99055da77a2d44b022b414dcce7bb2a3fcf27dd00d0cc20c734d86",
+    "examples/WISE.md": "69b219843309b6a6f1496391483e48639c4765198a9f6730e1861e0eb733dae1",
+    "LICENSE": "46c273d5a0a7f8bc3889863398e1bb20493e256f38033dfd637ec46bf654c531",
+    "requirements.txt": "4751f81b391828a77b522b9633fee66e45f54b758d73345e74184be87e4fcc52"
+  },
+  "modifications": "None"
+}
