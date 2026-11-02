@@ -10,7 +10,9 @@ def compute_grounded_z(model, tok, request, hp, layer):
     target_ids = tok(request['target_new']['str'], return_tensors='pt').input_ids[0].to('cuda')
     if target_ids[0] in [tok.bos_token_id, tok.unk_token_id]:
         target_ids = target_ids[1:]
-    templates = [c.format(request['prompt'])+tok.decode(target_ids[:-1])
+    # Preserve punctuation spacing: cleanup can merge tokens in quoted answers,
+    # leaving fewer teacher-forcing positions than target labels.
+    templates = [c.format(request['prompt'])+tok.decode(target_ids[:-1], clean_up_tokenization_spaces=False)
                  for group in request['value_context_templates'] for c in group]
     templates += ['{} is a']
     nethook.set_requires_grad(False, model)
