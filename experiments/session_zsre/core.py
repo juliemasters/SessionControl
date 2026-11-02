@@ -48,9 +48,12 @@ def raw_write_request(request, tok):
     One ungrounded-question template uses the existing grounded-value optimizer
     without a fabricated conversation. The ordinary KL prompt is unchanged.
     """
+    # SentencePiece drops the initial separator when decoding a standalone target
+    # prefix. Keep that separator explicitly in the value context, matching the
+    # official evaluator's `prompt + ' ' + target`. The write key stays raw Q.
     return dict(case_id=request['case_id'], subject=request['prompt'], prompt='{}',
                 target_new={'str': request['target_new'] + tok.eos_token}, target_true={'str': ''},
-                value_context_templates=[['{}']])
+                value_context_templates=[['{} ']])
 
 
 def nullspace(matrix, threshold):

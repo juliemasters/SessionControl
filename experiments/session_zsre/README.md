@@ -10,6 +10,11 @@ Reuse the existing compact independent AlphaEdit writer (layers 13–15) and
 normalized activation update-energy router. Write the exact raw question and
 complete counterfactual answer plus EOS. Omit the older Q:/A: wrapper in both
 phases to match native WISE's raw question interface. No context is invented.
+The value context retains an explicit space before decoded target tokens because
+SentencePiece drops that leading space. Before writing, every one of the 1,000
+value-optimizer token sequences is checked against direct question-ID plus
+target-prefix-ID concatenation. This fixes tokenizer alignment without changing
+the existing optimizer, objective or key position.
 
 Mistral needs its own nullspace projectors: first 200 **training-split** locality
 prompts, all token keys, uncentered second moment, thin SVD, eigenvalue threshold
@@ -36,8 +41,8 @@ The matched WISE run must already be complete and its assets present.
 
 ```bash
 python -m unittest tests.test_session_zsre -v
-python -m experiments.session_zsre.prepare --out runs/session-zsre-mistral-v1
-python -m experiments.session_zsre.run launch --out runs/session-zsre-mistral-v1
+python -m experiments.session_zsre.prepare --out runs/session-zsre-mistral-v2
+python -m experiments.session_zsre.run launch --out runs/session-zsre-mistral-v2
 ```
 
 The detached driver verifies frozen model/source/data hashes, checks ten baseline

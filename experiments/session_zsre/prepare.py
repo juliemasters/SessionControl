@@ -15,7 +15,7 @@ DEPENDENCIES = ['compact_session_memory.py', 'AlphaEdit/__init__.py', 'AlphaEdit
                 'experiments/wise_paper/worker.py', 'experiment_utils.py']
 
 
-def prepare(out):
+def prepare(out,projection_from=None):
     if out.exists():
         raise FileExistsError('Use a fresh matched-study directory')
     reference = json.loads((REFERENCE / 'design.json').read_text())
@@ -24,6 +24,19 @@ def prepare(out):
     modules()  # Verify the unchanged official evaluator/source dependencies.
     requests = json.loads((REFERENCE / 'requests.json').read_text())
     assert len(requests) == 1000 and [r['case_id'] for r in requests] == list(range(1000))
+    # Full CPU preflight of the exact strings the unchanged value optimizer will
+    # tokenize. Validate all targets, not merely the first successful pilot item.
+    from transformers import AutoTokenizer
+    from .core import raw_write_request
+    tok=AutoTokenizer.from_pretrained(reference['model'],local_files_only=True)
+    for r in requests:
+        request=raw_write_request(r,tok)
+        text=' '+request['target_new']['str'].lstrip()
+        target_ids=tok.encode(text)[1:]
+        template=request['value_context_templates'][0][0].format(request['prompt'])+tok.decode(target_ids[:-1],clean_up_tokenization_spaces=False)
+        assembled=tok.encode(template.format(request['subject']))
+        expected=tok.encode(r['prompt'])+target_ids[:-1]
+        if assembled!=expected:raise ValueError('Mistral value-token alignment failed at case '+str(r['case_id']))
     # Only training-locality prompts are allowed into projector construction.
     corpus = [r['loc_prompt'] for r in requests[:200]]
     out.mkdir(parents=True)
@@ -45,6 +58,8 @@ def prepare(out):
                    'No contextual conversation is available in ZsRE; use only the question template and normal KL preservation prompt.',
              adaptation='Mistral replaces Llama using the same compatible module paths and 32-layer loss index. '
                         'Omit the prior Q:/A: wrapper at both write and inference to match the native WISE raw prompt. '
+                        'Use an explicit question/answer separator in the value context because SentencePiece target decoding drops its leading space. '
+                        'All 1000 value token sequences are checked against direct question-ID plus target-ID concatenation before launch. '
                         'Preserve our prior EOS write target; WISE uses its own native target policy. This is a complete-system comparison.',
              preservation='Rebuild model-specific empirical nullspace projectors from all tokens of first 200 train-split locality prompts '
                           '(loc + loc_ans), same native WISE training data access. Uncentered second moment, thin SVD, threshold .02; '
@@ -63,7 +78,22 @@ def prepare(out):
                            'all-target-token indicators; compact retained disk bytes; peak allocated evaluation GPU memory. '
                            'Projector is a construction artifact, excluded from retained bank bytes. No TTFT comparison is claimed.',
              checkpoint_protocol=reference['checkpoint_protocol'], prepared_utc=datetime.now(timezone.utc).isoformat())
+    if projection_from:
+        source=projection_from.resolve()
+        prior=json.loads((source/'manifest.json').read_text())
+        if prior['corpus_sha256']!=d['corpus_sha256']:raise ValueError('Cannot reuse a different preservation corpus')
+        prior_design=json.loads((source.parent/'design.json').read_text())
+        for key in ['model','model_revision','layers']:
+            if prior_design[key]!=d[key]:raise ValueError('Incompatible preserved projector: '+key)
+        target=out/'projection';target.mkdir()
+        for file,want in prior['files'].items():
+            if digest(source/file)!=want:raise ValueError('Prior projector failed checksum')
+            (target/file).symlink_to(source/file)
+        save(target/'manifest.json',prior)
+        d['projection_reuse']=dict(source=str(source),files=prior['files'],note='Identical base model, corpus and projector procedure; no edit delta reused.')
     save(out/'design.json',d)
+    save(out/'token_alignment_validation.json',dict(exact=True,checked=1000,
+         note='Every unchanged value-optimizer string has exactly the raw question IDs plus target prefix IDs. Explicit separator preserves SentencePiece boundaries.'))
     save(out/'completion.json',dict(completed=False,stage='prepared',physical_gpu=1))
     print('PREPARED',out,'1000 independent memories; checkpoints',d['checkpoints'],flush=True)
 
@@ -81,5 +111,5 @@ def check(out):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True)
-    prepare(p.parse_args().out.resolve())
+    p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--projection-from',type=Path)
+    a=p.parse_args();prepare(a.out.resolve(),a.projection_from)

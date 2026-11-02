@@ -41,7 +41,7 @@ class MatchedSessionTests(unittest.TestCase):
         request=raw_write_request(r,SimpleNamespace(eos_token='</s>'))
         self.assertEqual(request['subject'],'Which city?')
         self.assertEqual(request['target_new']['str'],'The full answer.</s>')
-        self.assertEqual(request['value_context_templates'],[['{}']])
+        self.assertEqual(request['value_context_templates'],[['{} ']])
 
     def test_raw_query_keys_match_alphaedit_lookup_on_tiny_mistral(self):
         from transformers import MistralConfig,MistralForCausalLM,AutoTokenizer
