@@ -117,7 +117,10 @@ def routed_metric(memory,bank,metric,model,tok,metric_hp,query,target,*,locality
         memory.apply(bank[selected])
         value=metric(model,tok,metric_hp,query,target,0,locality=locality)
         if len(value)!=1:raise ValueError('Unexpected native metric shape')
-        return value[0],dict(selected=selected,score=score,margin=margin),ranks
+        # The native helper returns numpy.float64 for a single unbatched score.
+        # Match native WISE worker's Python-float conversion before bool flags.
+        result=value[0] if locality else float(value[0])
+        return result,dict(selected=selected,score=score,margin=margin),ranks
     finally:memory.restore()
 
 

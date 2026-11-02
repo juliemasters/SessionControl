@@ -73,6 +73,13 @@ class MatchedSessionTests(unittest.TestCase):
                     routed_metric(memory,bank,metric,model,tok,hp,query,'secret held-out target')
                 self.assertEqual(capture.call_args.args[-1],query)
             self.assertTrue(torch.equal(model.get_parameter(name),base))
+            import numpy as np
+            import json
+            def good_metric(*args,**kwargs):return [np.float64(.75)]
+            result,route,ranks=routed_metric(memory,bank,good_metric,model,tok,hp,query,'secret held-out target')
+            self.assertIs(type(result),float)
+            json.dumps(dict(score=result,all_tokens=result==1.,route=route,ranks=ranks),allow_nan=False)
+            self.assertTrue(torch.equal(model.get_parameter(name),base))
 
 
 if __name__=='__main__':unittest.main()

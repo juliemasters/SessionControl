@@ -41,8 +41,8 @@ The matched WISE run must already be complete and its assets present.
 
 ```bash
 python -m unittest tests.test_session_zsre -v
-python -m experiments.session_zsre.prepare --out runs/session-zsre-mistral-v2
-python -m experiments.session_zsre.run launch --out runs/session-zsre-mistral-v2
+python -m experiments.session_zsre.prepare --out runs/session-zsre-mistral-v3
+python -m experiments.session_zsre.run launch --out runs/session-zsre-mistral-v3
 ```
 
 The detached driver verifies frozen model/source/data hashes, checks ten baseline
