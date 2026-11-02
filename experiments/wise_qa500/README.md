@@ -88,3 +88,36 @@ Implementation and CPU integration tests are available. The real GPU 1 pilot and
 ## Citation
 
 Peng Wang et al. *WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models.* NeurIPS 2024. [Paper](https://arxiv.org/abs/2405.14768).
+
+## Ten fresh LongMemEval measurement passes
+
+After the separate native ZsRE benchmark, return to the **original LongMemEval
+setting and metrics** with:
+
+```bash
+python -m unittest tests.test_wise_remeasure -v
+python -m experiments.wise_qa500.remeasure prepare --out runs/wise-qa500-remeasure-v2
+python -m experiments.wise_qa500.remeasure launch --out runs/wise-qa500-remeasure-v2
+```
+
+Reuse all seven audited WISE checkpoints, the same Llama-3.1 base model, all exact
+questions, native routing/thresholds and original generation/timing helpers.
+Inference instantiates the direct official WISE class; the original training-only
+optimization subclass is not installed. The tiny-Llama test verifies exact logit
+parity when transferring its checkpoint to direct native inference.
+
+Measure **complete final-answer word-token F1 and normalized exact match**, visible
+and first-generated TTFT, full query latency, output/cap statistics, deployed disk
+bytes, sampled process RAM and peak CUDA allocated/reserved memory at every
+checkpoint, ten actual passes each. Query arrival through native WISE routing and
+prefill is included in TTFT. No reference enters generation or routing. Report
+means and sample SD over the **new ten** only; retain the previous four baseline
+aggregate curves under explicit reuse labels.
+
+These are ten inference repetitions over one frozen trained trajectory, rather
+than ten independently trained models. The successful ZsRE reproduction did not
+establish a correction to the old LongMemEval weights. No memory rewriting,
+hyperparameter tuning, oracle routing, teacher-forced accuracy substitution or
+copying of previous WISE answers/timings occurs. Outputs stay in a new directory;
+the earlier reports and source snapshots remain unchanged. The detached GPU-1
+driver audits every new answer/timing and saves the final report automatically.
