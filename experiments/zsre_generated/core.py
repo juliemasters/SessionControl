@@ -83,6 +83,26 @@ def install_wise(editor,state):
     a.editing_total_cnt=state['bindings'];a.merge_cnt=state['merge_cnt'];a.editing=False;a.training=False
 
 
+def finalized_merge_snapshot(editor,n,setup_tokens):
+    """Finalize an evaluation copy, then restore a trainable native trajectory.
+
+    Native merging replaces Parameter objects. They must be ordinary tensors,
+    because subsequent edits mutate/train them. inference_mode would create
+    inference tensors and make restoration fail outside that mode. Disabling
+    inference mode here changes tensor bookkeeping, not WISE's merge algorithm.
+    """
+    import torch
+    if editor.config.retrieve:raise ValueError('Finalization helper is for WISE-Merge')
+    with torch.inference_mode(False),torch.no_grad():
+        training=wise_state(editor,n)
+        try:
+            editor(**setup_tokens)
+            finalized=wise_state(editor,n)
+        finally:
+            install_wise(editor,training)
+    return finalized
+
+
 def document(request):return 'Stored question: '+request['prompt']+'\nStored answer: '+request['target_new']
 
 

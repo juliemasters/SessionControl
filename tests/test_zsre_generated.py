@@ -5,7 +5,7 @@ import tempfile
 import time
 import unittest
 import torch
-from experiments.zsre_generated.core import cumulative_right,wise_state,install_wise,generate_raw,VENDOR,modules
+from experiments.zsre_generated.core import cumulative_right,wise_state,install_wise,finalized_merge_snapshot,generate_raw,VENDOR,modules
 
 
 class GeneratedZsRETests(unittest.TestCase):
@@ -57,6 +57,28 @@ class GeneratedZsRETests(unittest.TestCase):
             install_wise(editor,state)
             with torch.no_grad():after=editor.model(input_ids=query).logits
             self.assertTrue(torch.equal(before,after));self.assertEqual(a.editing_total_cnt,500)
+
+    def test_production_finalization_restores_training_outside_inference_mode(self):
+        _,model,_=self.tiny();native=modules()
+        hp=native['wise_hparams'].WISEHyperParams.from_hparams(str(VENDOR/'hparams/WISE/mistral-7b.yaml'))
+        hp.model_name='mistral-tiny';hp.inner_params=['model.layers[1].mlp.down_proj.weight'];hp.retrieve=False
+        editor=native['WISE'].WISE(hp,model,'cpu');a=editor.get_adapter_layer()
+        with torch.no_grad():a.new_weight.add_(.1)
+        a.editing_mean_act.update(.01);a.editing_total_cnt=500;a.save_weight()
+        before=wise_state(editor,500);query=torch.tensor([[3,4,5,6]])
+        # Exercise the exact production helper even when its caller is in
+        # inference mode, which previously made the next copy_/edit fail.
+        with torch.inference_mode():deployment=finalized_merge_snapshot(editor,500,dict(input_ids=query))
+        self.assertIsNotNone(deployment['main_weight'])
+        self.assertFalse(torch.is_inference(a.layer.weight));self.assertFalse(torch.is_inference(a.new_weight))
+        self.assertTrue(torch.equal(a.layer.weight,a.original_layer.weight))
+        self.assertEqual(a.editing_total_cnt,500);self.assertEqual(len(a.memory_weight),len(before['memory_weight']))
+        for old,new in zip(before['memory_weight'],a.memory_weight):self.assertTrue(torch.equal(old,new))
+        # Prove the next optimizer step is possible and has a finite gradient.
+        a.editing=True;a.set_parameter_tunable();optimizer=torch.optim.SGD([a.new_weight],lr=.01)
+        loss=editor.model(input_ids=query).logits.square().mean();loss.backward()
+        self.assertIsNotNone(a.new_weight.grad);self.assertTrue(torch.isfinite(a.new_weight.grad).all())
+        optimizer.step()
 
     def test_generation_consumes_raw_question_without_gold_prefix(self):
         _,model,tok=self.tiny();query='Which city is the capital of France?';seen=[]

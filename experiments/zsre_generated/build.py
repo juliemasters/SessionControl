@@ -4,7 +4,7 @@ import gc
 from pathlib import Path
 import random
 import time
-from .core import (VENDOR,SIZES,read,save,digest,durable_save_torch,status,now,load,modules,cumulative_right,wise_state,install_wise)
+from .core import (VENDOR,SIZES,read,save,digest,durable_save_torch,status,now,load,modules,cumulative_right,wise_state,finalized_merge_snapshot)
 
 
 def plain(out,until):
@@ -86,17 +86,15 @@ def wise(out,mode,until):
         if a.editing_total_cnt!=i+1 or not torch.isfinite(a.new_weight).all():raise ValueError('Invalid native edit state')
         ledger.append(dict(case_id=i,internal_write_seconds=time.monotonic()-began));save(folder/'ledger.json',ledger)
         n=i+1
-        train_state=None
-        if n==500 and mode=='wise_merge':
-            # Native WISE.__call__ performs the official final merge. One fixed,
-            # unrelated setup input triggers it; no test answer enters this step.
-            train_state=wise_state(editor,n)
-            with torch.inference_mode():editor(**tok('Memory initialization.',return_tensors='pt').to(model.device))
         if n in SIZES:
-            path=folder/f'wise-{n}.pt';durable_save_torch(torch,path,wise_state(editor,n))
+            if n==500 and mode=='wise_merge':
+                # Native finalization applies only to the evaluation snapshot.
+                # The helper restores ordinary tensors before training resumes.
+                deployment=finalized_merge_snapshot(editor,n,tok('Memory initialization.',return_tensors='pt').to(model.device))
+            else:deployment=wise_state(editor,n)
+            path=folder/f'wise-{n}.pt';durable_save_torch(torch,path,deployment)
             save(folder/f'wise-{n}.json',dict(n=n,sha256=digest(path),bank_bytes=path.stat().st_size))
-        if train_state is not None:
-            install_wise(editor,train_state);del train_state
+            del deployment
         if n in SIZES or n%25==0 or n==until:
             native_save(editor,restart,torch)
             save(folder/'rng.json',dict(python=random.getstate(),numpy=numpy_state(np)))

@@ -53,3 +53,25 @@ It waits for GPU 1 and never kills another job or falls back to GPU 0. It surviv
 chat disconnection while the server remains powered on; failures are explicit.
 Raw datasets, generated answer transcripts, model weights and checkpoints stay
 local. Only source and appropriately labeled aggregate reports belong on GitHub.
+
+## Resume the recorded 500-item checkpoint failure
+
+The first full trajectory stopped because finalizing WISE-Merge inside
+`torch.inference_mode()` created inference tensors that the runner could not
+restore for continued training. The production finalization helper now disables
+inference mode and uses `no_grad`. WISE's algorithm and merge calculations are
+unchanged. A regression test calls this actual helper from an inference context,
+checks restoration and performs the next native-gradient optimizer step.
+
+The failed run and its frozen source commit remain preserved. Recovery verifies
+and reuses the complete 1,000-item cumulative AlphaEdit bank, all independent
+factors, deployed prefixes and RAG index. Native WISE resumes with its exact
+saved weights, masks, RNG and history. Old inference rows are not copied:
+
+```bash
+python -m experiments.zsre_generated.recover \
+  --source runs/zsre-generated-sixmethod-1000-v2 \
+  --out runs/zsre-generated-sixmethod-1000-v3
+python -m experiments.zsre_generated.run launch \
+  --out runs/zsre-generated-sixmethod-1000-v3
+```
